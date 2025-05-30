@@ -29,7 +29,29 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+ // Menú toggle para móviles
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+  
+  if (menuToggle && nav) {
+    menuToggle.addEventListener('click', function() {
+      nav.classList.toggle('active');
+      this.querySelector('i').classList.toggle('fa-times');
+      this.querySelector('i').classList.toggle('fa-bars');
+    });
+  }
 
+  // Cerrar menú al hacer clic en un enlace
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      if (nav) nav.classList.remove('active');
+      if (menuToggle) {
+        menuToggle.querySelector('i').classList.remove('fa-times');
+        menuToggle.querySelector('i').classList.add('fa-bars');
+      }
+    });
+  });
 // Paginación de proyectos
 document.addEventListener('DOMContentLoaded', function() {
   const projectGrids = document.querySelectorAll('.projects-grid');

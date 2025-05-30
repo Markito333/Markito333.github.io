@@ -6,49 +6,61 @@
   <title>Marcos David | Desarrollador Web</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
-  <!-- Fondo animado -->
-  <div class="background-animation"></div>
+  <!-- Fondo animado de partículas -->
+  <div id="particles-js"></div>
   
-  <!-- Header -->
-  <header>
+  <!-- Header moderno -->
+  <header class="header-glass">
     <div class="container">
-      <h1 class="logo"><i class="fas fa-code"></i> MarkitoDev</h1>
+      <h1 class="logo" data-aos="fade-down"><i class="fas fa-code"></i> MarkitoDev</h1>
       <nav>
         <ul>
-          <li><a href="#about"><i class="fas fa-user"></i> Sobre mí</a></li>
-          <li><a href="#skills"><i class="fas fa-laptop-code"></i> Tecnologías</a></li>
-          <li><a href="#projects"><i class="fas fa-project-diagram"></i> Proyectos</a></li>
-          <li><a href="#contact"><i class="fas fa-envelope"></i> Contacto</a></li>
+          <li><a href="#about" class="nav-link" data-aos="fade-down" data-aos-delay="100"><i class="fas fa-user"></i> <span>Sobre mí</span></a></li>
+          <li><a href="#skills" class="nav-link" data-aos="fade-down" data-aos-delay="200"><i class="fas fa-laptop-code"></i> <span>Tecnologías</span></a></li>
+          <li><a href="#projects" class="nav-link" data-aos="fade-down" data-aos-delay="300"><i class="fas fa-project-diagram"></i> <span>Proyectos</span></a></li>
+          <li><a href="#contact" class="nav-link" data-aos="fade-down" data-aos-delay="400"><i class="fas fa-envelope"></i> <span>Contacto</span></a></li>
         </ul>
       </nav>
+      <div class="menu-toggle" data-aos="fade-down">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
   </header>
 
-  <!-- Hero + Sobre Mí (2 columnas) -->
-  <section id="hero">
+  <!-- Hero section mejorada -->
+  <section id="hero" class="hero-section">
     <div class="container">
       <div class="hero-grid">
         <!-- Columna 1: Foto + Info -->
-        <div class="hero-content">
+        <div class="hero-content" data-aos="fade-right">
           <div class="hero-image">
-            <img src="img/profile.jpg" alt="Marcos David">
+            <div class="image-wrapper">
+              <img src="img/profile.jpg" alt="Marcos David" class="profile-img">
+              <div class="image-border"></div>
+            </div>
           </div>
           <div class="hero-text">
-            <h1>Hola, soy <span class="highlight">Marcos David</span></h1>
-            <p>Desarrollador Web</p>
+            <h1 class="title-animation"><span class="highlight">Marcos David</span></h1>
+            <p class="subtitle-animation">Desarrollador Web</p>
             <div class="hero-buttons">
-              <a href="#projects" class="btn"><i class="fas fa-arrow-down"></i> Ver proyectos</a>
-              <a href="cv.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Descargar CV</a>
+              <a href="#projects" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-arrow-down"></i> Ver proyectos
+              </a>
+              <a href="cv.pdf" download class="btn btn-secondary" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fas fa-download"></i> Descargar CV
+              </a>
             </div>
           </div>
         </div>
 
         <!-- Columna 2: Sobre mí -->
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-left">
           <h2><i class="fas fa-user-tie"></i> Sobre mí</h2>
           <p>
             Desarrollador apasionado por crear soluciones web innovadoras y eficientes. 
@@ -56,126 +68,206 @@
             Disfruto transformar ideas en productos digitales funcionales 
             y atractivos. Siempre en busca de nuevos desafíos y oportunidades para crecer profesionalmente, 
             manteniéndome actualizado con las últimas tecnologías y mejores prácticas.
-           
           </p>
+          <div class="experience-info">
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <h3>3+ Años</h3>
+                <p>de experiencia</p>
+              </div>
+            </div>
+            <div class="experience-item" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-project-diagram"></i>
+              <div>
+                <h3>5+</h3>
+                <p>Proyectos completados</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Tecnologías -->
+  <!-- Tecnologías mejoradas -->
   <section id="skills" class="section">
     <div class="container">
-      <h2><i class="fas fa-laptop-code"></i> Tecnologías y Herramientas</h2>
+      <div class="section-header" data-aos="fade-up">
+        <h2><i class="fas fa-laptop-code"></i> Tecnologías y Herramientas</h2>
+        <p class="section-subtitle">Lenguajes, frameworks y herramientas que domino</p>
+      </div>
       <div class="skills-grid">
         <!-- Java -->
-      <!-- Java -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-</div>
-<!-- JavaScript -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-</div>
-<!-- HTML -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-</div>
-<!-- CSS -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-</div>
-<!-- Node.js -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-</div>
-<!-- Spring Boot -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
-</div>
-<!-- PostgreSQL -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
-</div>
-<!-- Postman -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
-</div>
-<!-- VS Code -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
-</div>
-<!-- WordPress -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress">
-</div>
-<!-- Docker -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-</div>
-<!-- Python -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-</div>
-<!-- React -->
-<div class="skill-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-</div>
-
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="100">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+          </div>
+          <div class="skill-name">Java</div>
+        </div>
+        <!-- JavaScript -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="150">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          </div>
+          <div class="skill-name">JavaScript</div>
+        </div>
+        <!-- HTML -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="200">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          </div>
+          <div class="skill-name">HTML5</div>
+        </div>
+        <!-- CSS -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="250">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          </div>
+          <div class="skill-name">CSS3</div>
+        </div>
+        <!-- Node.js -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="300">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+          </div>
+          <div class="skill-name">Node.js</div>
+        </div>
+        <!-- Spring Boot -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="350">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
+          </div>
+          <div class="skill-name">Spring</div>
+        </div>
+        <!-- PostgreSQL -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="400">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+          </div>
+          <div class="skill-name">PostgreSQL</div>
+        </div>
+        <!-- Postman -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="450">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
+          </div>
+          <div class="skill-name">Postman</div>
+        </div>
+        <!-- VS Code -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="500">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+          </div>
+          <div class="skill-name">VS Code</div>
+        </div>
+        <!-- WordPress -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="550">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress">
+          </div>
+          <div class="skill-name">WordPress</div>
+        </div>
+        <!-- Docker -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="600">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+          </div>
+          <div class="skill-name">Docker</div>
+        </div>
+        <!-- Python -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="650">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          </div>
+          <div class="skill-name">Python</div>
+        </div>
+        <!-- React -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="700">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+          </div>
+          <div class="skill-name">React</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Proyectos -->
+  <!-- Proyectos mejorados -->
   <section id="projects" class="section bg-light">
     <div class="container">
-      <h2><i class="fas fa-project-diagram"></i> Mis Proyectos</h2>
+      <div class="section-header" data-aos="fade-up">
+        <h2><i class="fas fa-project-diagram"></i> Mis Proyectos</h2>
+        <p class="section-subtitle">Algunos de mis trabajos recientes</p>
+      </div>
       <div class="projects-container">
         <div class="projects-grid">
           <!-- Proyecto 1 -->
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
             <div class="project-image">
-              <img src="https://source.unsplash.com/random/600x400/?web,design,1" alt="Proyecto 1">
+              <img src="img/Imagen4.jpg" alt="Aplicación Musical">
+              <div class="project-overlay">
+                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+              </div>
             </div>
             <div class="project-info">
               <h3>Aplicación Musical</h3>
               <p>Aplicación de escritorio para la gestión de canciones en la radio.</p>
               <div class="project-tech">
-                <i class="devicon-html5-plain colored"></i>
-                <i class="devicon-css3-plain colored"></i>
-                <i class="devicon-javascript-plain colored"></i>
+                <span>Java</span>
+                <span>JavaFX</span>
+                <span>MySQL</span>
               </div>
-              <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+              <div class="project-actions">
+                <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                <a href="#" class="btn-small btn-ghost"><i class="fas fa-code"></i> Código</a>
+              </div>
             </div>
           </div>
+          
           <!-- Proyecto 2 -->
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
             <div class="project-image">
-              <img src="https://source.unsplash.com/random/600x400/?app,development,2" alt="Proyecto 2">
+              <img src="img/Imagen3.jpg" alt="Sitio educativo">
+              <div class="project-overlay">
+                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+              </div>
             </div>
             <div class="project-info">
               <h3>Sitio educativo</h3>
               <p>Sistema de Gestión para el Centro Universitario Municipal de Guanajay.</p>
               <div class="project-tech">
-                <i class="devicon-react-original colored"></i>
-                <i class="devicon-firebase-plain colored"></i>
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
               </div>
-              <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+              <div class="project-actions">
+                <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                <a href="#" class="btn-small btn-ghost"><i class="fas fa-code"></i> Código</a>
+              </div>
             </div>
           </div>
+          
           <!-- Proyecto 3 -->
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
             <div class="project-image">
-              <img src="https://source.unsplash.com/random/600x400/?ecommerce,3" alt="Proyecto 3">
+              <img src="img/Imagen1.png" alt="Sistema de gestión">
+              <div class="project-overlay">
+                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+              </div>
             </div>
             <div class="project-info">
-              <h3>Sistema de gestión para el Círculo Infantil "José Francisco Costa Velázquez</h3>
-              <p>E-commerce completo con carrito de compras y pasarela de pago.</p>
+              <h3>Sistema de gestión infantil</h3>
+              <p>Sistema para el Círculo Infantil "José Francisco Costa Velázquez".</p>
               <div class="project-tech">
-                <i class="devicon-react-original colored"></i>
-                <i class="devicon-nodejs-plain colored"></i>
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>PostgreSQL</span>
               </div>
-              <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+              <div class="project-actions">
+                <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                <a href="#" class="btn-small btn-ghost"><i class="fas fa-code"></i> Código</a>
+              </div>
             </div>
           </div>
         </div>
@@ -184,51 +276,74 @@
           <!-- Proyecto 4 -->
           <div class="project-card">
             <div class="project-image">
-              <img src="https://source.unsplash.com/random/600x400/?dashboard,4" alt="Proyecto 4">
+              <img src="img/Imagen2.jpg" alt="Sistema de gestión de cargas">
+              <div class="project-overlay">
+                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+              </div>
             </div>
             <div class="project-info">
-              <h3>Sistema de gestión de cargas y descargas de productos</h3>
+              <h3>Sistema de gestión de cargas</h3>
               <p>Aplicación web para controlar los procesos en una entidad de gestión de camiones.</p>
               <div class="project-tech">
-                <i class="devicon-vuejs-plain colored"></i>
-                <i class="devicon-spring-plain colored"></i>
+                <span>Vue.js</span>
+                <span>Spring Boot</span>
+                <span>MongoDB</span>
               </div>
-              <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+              <div class="project-actions">
+                <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                <a href="#" class="btn-small btn-ghost"><i class="fas fa-code"></i> Código</a>
+              </div>
             </div>
           </div>
+          
           <!-- Proyecto 5 -->
           <div class="project-card">
             <div class="project-image">
-              <img src="https://source.unsplash.com/random/600x400/?blog,5" alt="Proyecto 5">
+              <img src="https://source.unsplash.com/random/600x400/?blog,website" alt="Blog Personal">
+              <div class="project-overlay">
+                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+              </div>
             </div>
             <div class="project-info">
               <h3>Blog Personal</h3>
               <p>Blog con sistema de comentarios y autenticación.</p>
               <div class="project-tech">
-                <i class="devicon-python-plain colored"></i>
-                <i class="devicon-django-plain colored"></i>
+                <span>Python</span>
+                <span>Django</span>
+                <span>PostgreSQL</span>
               </div>
-              <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+              <div class="project-actions">
+                <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                <a href="#" class="btn-small btn-ghost"><i class="fas fa-code"></i> Código</a>
+              </div>
             </div>
           </div>
+          
           <!-- Proyecto 6 -->
           <div class="project-card">
             <div class="project-image">
-              <img src="https://source.unsplash.com/random/600x400/?portfolio,6" alt="Proyecto 6">
+              <img src="https://source.unsplash.com/random/600x400/?art,gallery" alt="Portfolio Artístico">
+              <div class="project-overlay">
+                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+              </div>
             </div>
             <div class="project-info">
               <h3>Portfolio Artístico</h3>
               <p>Galería interactiva para artista visual.</p>
               <div class="project-tech">
-                <i class="devicon-html5-plain colored"></i>
-                <i class="devicon-css3-plain colored"></i>
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>GSAP</span>
               </div>
-              <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+              <div class="project-actions">
+                <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                <a href="#" class="btn-small btn-ghost"><i class="fas fa-code"></i> Código</a>
+              </div>
             </div>
           </div>
         </div>
         
-        <div class="pagination">
+        <div class="pagination" data-aos="fade-up">
           <button class="pagination-btn active" data-page="0">1</button>
           <button class="pagination-btn" data-page="1">2</button>
         </div>
@@ -236,31 +351,95 @@
     </div>
   </section>
 
-  <!-- Contacto -->
+  <!-- Contacto mejorado -->
   <section id="contact" class="section">
     <div class="container">
-      <h2><i class="fas fa-envelope"></i> Contacto</h2>
+      <div class="section-header" data-aos="fade-up">
+        <h2><i class="fas fa-envelope"></i> Contacto</h2>
+        <p class="section-subtitle">¡Hablemos sobre tu próximo proyecto!</p>
+      </div>
       <div class="contact-content">
-        <div class="contact-info">
-          <p>¿Interesado en trabajar juntos o tienes alguna pregunta?</p>
-          <p>¡No dudes en contactarme a través de mis redes!</p>
-          <div class="social-links">
-            <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="mailto:tuemail@example.com"><i class="fas fa-envelope"></i> Email</a>
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Ubicación</h3>
+              <p>La Habana, Cuba</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>markitodiazfaulin@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h3>Teléfono</h3>
+              <p>+53 55531928</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-links" data-aos="fade-left">
+          <h3>Mis redes</h3>
+          <div class="social-grid">
+            <a href="https://github.com/tuusuario" target="_blank" class="social-card github">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/tuusuario" target="_blank" class="social-card linkedin">
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://twitter.com/tuusuario" target="_blank" class="social-card twitter">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+            <a href="https://instagram.com/tuusuario" target="_blank" class="social-card instagram">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
+  <!-- Footer mejorado -->
+  <footer class="footer-glass">
     <div class="container">
-      <p>© <span id="current-year"></span> Marcos David.</p>
+      <div class="footer-content">
+        <div class="footer-logo" data-aos="fade-right">
+          <i class="fas fa-code"></i> MarkitoDev
+        </div>
+        <div class="footer-links" data-aos="fade-up">
+          <a href="#about">Sobre mí</a>
+          <a href="#skills">Tecnologías</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#contact">Contacto</a>
+        </div>
+        <div class="footer-social" data-aos="fade-left">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom" data-aos="fade-up">
+        <p>© <span id="current-year"></span> Marcos David. Todos los derechos reservados.</p>
+      </div>
     </div>
   </footer>
 
+  <!-- Botón de volver arriba -->
+  <a href="#hero" class="back-to-top" data-aos="fade-up" data-aos-offset="0">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
