@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #393963;
+  --primary-color: #0c1f52;
   --primary-light: #bebef3;
   --primary-dark: hsl(240, 34%, 15%);
   --secondary-color: #505050;
@@ -1009,4 +1009,7 @@ nav ul li a:hover {
     bottom: 20px;
     right: 20px;
   }
+}
+.different-color {
+  color: rgb(182, 137, 255);
 }
