@@ -147,7 +147,6 @@ section {
   }
 }
 
-/* Header Modernizado */
 .header {
   background-color: var(--glass-effect);
   box-shadow: var(--glass-shadow);
@@ -482,7 +481,6 @@ section {
   margin: 0;
 }
 
-/* Skills Section Modernizada */
 .skills-section {
   background-color: var(--light-color);
 }
@@ -535,7 +533,6 @@ section {
   font-size: 0.9rem;
 }
 
-/* Projects Section Modernizada */
 .projects-section {
   background-color: var(--white);
 }
@@ -732,7 +729,6 @@ section {
   box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
 }
 
-/* Contact Section Modernizada */
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -844,7 +840,6 @@ section {
   background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
-/* Footer Modernizado */
 .footer {
   background-color: var(--glass-effect);
   backdrop-filter: var(--glass-backdrop);
@@ -936,7 +931,6 @@ section {
   font-size: 0.9rem;
 }
 
-/* Botón de volver arriba */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -977,7 +971,6 @@ section {
   background-color: transparent;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   .hero-grid {
     gap: 30px;

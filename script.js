@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Inicializar AOS (Animate On Scroll)
   AOS.init({
     duration: 800,
     easing: 'ease-in-out',
@@ -7,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     offset: 100
   });
 
-  // Efecto smooth scroll para los enlaces del menú
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -21,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
           behavior: 'smooth'
         });
         
-        // Cerrar menú móvil si está abierto
         if (nav.classList.contains('active')) {
           menuToggle.classList.remove('active');
           nav.classList.remove('active');
@@ -30,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Navegación activa al hacer scroll
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link');
   
@@ -53,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
     
-    // Mostrar/ocultar botón de volver arriba
     const backToTop = document.querySelector('.back-to-top');
     if (window.scrollY > 500) {
       backToTop.classList.add('active');
@@ -62,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Menú toggle para móviles
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');
   
@@ -71,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
     nav.classList.toggle('active');
   });
 
-  // Cerrar menú al hacer clic en un enlace (móvil)
   const navItems = document.querySelectorAll('.nav-item');
   navItems.forEach(item => {
     item.addEventListener('click', function() {
@@ -82,11 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Paginación de proyectos
   const projectGrids = document.querySelectorAll('.projects-grid');
   const paginationButtons = document.querySelectorAll('.pagination-btn');
   
-  // Mostrar solo la primera página inicialmente
   projectGrids.forEach((grid, index) => {
     if (index === 0) {
       grid.classList.remove('hidden');
@@ -95,16 +86,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  // Manejar clic en botones de paginación
   paginationButtons.forEach(button => {
     button.addEventListener('click', function() {
       const pageIndex = parseInt(this.getAttribute('data-page'));
       
-      // Actualizar botones activos
       paginationButtons.forEach(btn => btn.classList.remove('active'));
       this.classList.add('active');
       
-      // Mostrar la página correspondiente
       projectGrids.forEach((grid, index) => {
         if (index === pageIndex) {
           grid.classList.remove('hidden');
@@ -115,7 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Inicializar partículas.js
   if (document.getElementById('particles-js')) {
     particlesJS('particles-js', {
       "particles": {
@@ -223,8 +210,6 @@ document.addEventListener('DOMContentLoaded', function() {
       "retina_detect": true
     });
   }
-
-  // Actualizar año en el footer
   const currentYear = document.getElementById('current-year');
   if (currentYear) {
     currentYear.textContent = new Date().getFullYear();
