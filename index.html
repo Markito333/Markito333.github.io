@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <div id="particles-js"></div>
-  
   <header class="header">
     <div class="container">
       <h1 class="logo" data-aos="fade-down">
@@ -24,25 +22,25 @@
           <li class="nav-item" data-aos="fade-down" data-aos-delay="100">
             <a href="#about" class="nav-link">
               <i class="fas fa-user"></i>
-              <span class="nav-text">About me</span>
+              <span class="nav-text">Sobre mí</span>
             </a>
           </li>
           <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
             <a href="#skills" class="nav-link">
               <i class="fas fa-laptop-code"></i>
-              <span class="nav-text">Technologies</span>
+              <span class="nav-text">Tecnologías</span>
             </a>
           </li>
           <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
             <a href="#projects" class="nav-link">
               <i class="fas fa-project-diagram"></i>
-              <span class="nav-text">Projects</span>
+              <span class="nav-text">Proyectos</span>
             </a>
           </li>
           <li class="nav-item" data-aos="fade-down" data-aos-delay="400">
             <a href="#contact" class="nav-link">
               <i class="fas fa-envelope"></i>
-              <span class="nav-text">Contact</span>
+              <span class="nav-text">Contacto</span>
             </a>
           </li>
         </ul>
@@ -57,383 +55,629 @@
     </div>
   </header>
 
-  <section id="hero" class="hero-section">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content" data-aos="fade-right">
-          <div class="hero-image-container">
-            <div class="hero-image">
-              <div class="image-wrapper">
-                <img src="img/profile.jpg" alt="Marcos David" class="profile-img">
-                <div class="image-border"></div>
+  <main>
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="bento-grid">
+          <div class="bento-main" data-aos="fade-right">
+            <div class="bento-badge">Markito { ; }</div>
+            <div class="profile-section">
+              <div class="profile-image">
+                <img src="img/profile.png" alt="Marcos David">
               </div>
-            </div>
-          </div>
-          <div class="hero-text">
-            <h1 class="typewriter">
-              <span class="highlight">Marcos</span> 
-              <span class="different-color">David</span>
-            </h1>
-            <p class="subtitle-animation">Web Developer</p>
-            <div class="hero-buttons">
-              <a href="#projects" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="300">
-                <i class="fas fa-arrow-down"></i>
-                <span>See Projects</span>
-              </a>
-              <a href="https://raw.githubusercontent.com/Markito333/Markito333.github.io/main/CV.pdf" download="CV.pdf" class="btn btn-secondary">
-                <i class="fas fa-download"></i>
-                <span>Download CV</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-content" data-aos="fade-left">
-          <div class="about-header">
-            <h2><i class="fas fa-user-tie"></i> About me</h2>
-          </div>
-          <div class="about-body">
-            <p>
-              Passionate developer focused on building innovative and efficient web solutions. 
-              With over 3 years of experience in both frontend and backend development, 
-              I enjoy transforming ideas into functional and visually engaging digital products. 
-              Continuously seeking new challenges and opportunities for professional growth, 
-              while staying up to date with the latest technologies and best practices.
-            </p>
-            <div class="experience-info">
-              <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="experience-icon">
-                  <i class="fas fa-briefcase"></i>
+              <div class="profile-info">
+                <h1 class="profile-name">Marcos David</h1>
+                <p class="profile-title">Desarrollador Web</p>
+                <div class="profile-buttons">
+                  <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-arrow-down"></i>
+                    <span>Ver Proyectos</span>
+                  </a>
+                  <a href="https://raw.githubusercontent.com/Markito333/Markito333.github.io/main/CV.pdf" download="CV.pdf" class="btn btn-secondary">
+                    <i class="fas fa-download"></i>
+                    <span>Descargar CV</span>
+                  </a>
                 </div>
-                <div class="experience-details">
-                  <h3>3+ years</h3>
-                  <p>of experience</p>
-                </div>
-              </div>
-              <div class="experience-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="experience-icon">
-                  <i class="fas fa-project-diagram"></i>
-                </div>
-                <div class="experience-details">
-                  <h3>5+</h3>
-                  <p>Completed Projects</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="skills-section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2><i class="fas fa-laptop-code"></i> Technologies and Tools</h2>
-        <p class="section-subtitle">Languages, frameworks and tools I master</p>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="100">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-          </div>
-          <div class="skill-name">Java</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="150">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-          </div>
-          <div class="skill-name">JavaScript</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="200">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-          </div>
-          <div class="skill-name">HTML5</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="250">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-          </div>
-          <div class="skill-name">CSS3</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="300">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-          </div>
-          <div class="skill-name">Node.js</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="350">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
-          </div>
-          <div class="skill-name">Spring Boot</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="400">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
-          </div>
-          <div class="skill-name">PostgreSQL</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="450">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
-          </div>
-          <div class="skill-name">Postman</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="500">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
-          </div>
-          <div class="skill-name">VS Code</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="550">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress">
-          </div>
-          <div class="skill-name">WordPress</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="600">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-          </div>
-          <div class="skill-name">Docker</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="650">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-          </div>
-          <div class="skill-name">Python</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="700">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-          </div>
-          <div class="skill-name">React</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="800">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-          </div>
-          <div class="skill-name">Git</div>
-        </div>
-        <div class="skill-item" data-aos="flip-left" data-aos-delay="900">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-          </div>
-          <div class="skill-name">GitHub</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="projects-section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2><i class="fas fa-project-diagram"></i> My Projects</h2>
-        <p class="section-subtitle">Some of my recent work</p>
-      </div>
-      <div class="projects-container">
-        <div class="projects-grid">
-          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="project-image">
-              <img src="img/Imagen4.jpg" alt="Music Application" class="project-img">
-              <div class="project-overlay">
-                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
-              </div>
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">Music Application</h3>
-              <p class="project-description">Desktop application for managing songs on the radio.</p>
-              <div class="project-tech">
-                <span class="tech-tag">Java</span>
-              </div>
-              <div class="project-actions">
-                <a href="#" class="btn btn-small">
-                  <i class="fas fa-external-link-alt"></i>
-                  <span>View Demo</span>
-                </a>
-                <a href="#" class="btn btn-small btn-ghost">
-                  <i class="fas fa-code"></i>
-                  <span>Code</span>
-                </a>
               </div>
             </div>
           </div>
           
-          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-image">
-              <img src="img/Imagen3.jpg" alt="Educational Site" class="project-img">
-              <div class="project-overlay">
-                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+          <div class="bento-stats">
+            <div class="stat-card" data-aos="fade-left" data-aos-delay="200" style="background-color: rgb(186, 223, 255);">
+              <div class="stat-badge">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="stat-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="stat-content">
+                <h3 class="stat-number">5+</h3>
+                <p class="stat-text">Años de experiencia</p>
               </div>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">Educational Site</h3>
-              <p class="project-description">Management System for the Municipal University Center of Guanajay.</p>
-              <div class="project-tech">
-                <span class="tech-tag">HTML/CSS</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Spring Boot</span>
-                <span class="tech-tag">PostgreSQL</span>
+            
+            <div class="stat-card" data-aos="fade-left" data-aos-delay="300" style="background-color: rgb(235, 200, 255);">
+              <div class="stat-badge">
+                <i class="fas fa-rocket"></i>
               </div>
-              <div class="project-actions">
-                <a href="#" class="btn btn-small">
-                  <i class="fas fa-external-link-alt"></i>
-                  <span>View Demo</span>
-                </a>
-                <a href="#" class="btn btn-small btn-ghost">
-                  <i class="fas fa-code"></i>
-                  <span>Code</span>
-                </a>
+              <div class="stat-icon">
+                <i class="fas fa-project-diagram"></i>
               </div>
-            </div>
-          </div>
-          
-          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="project-image">
-              <img src="img/Imagen1.png" alt="Children's Management System" class="project-img">
-              <div class="project-overlay">
-                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
-              </div>
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">Children's Management System</h3>
-              <p class="project-description">System for the "José Francisco Costa Velázquez" Kindergarten.</p>
-              <div class="project-tech">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Spring Boot</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">HTML/CSS</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Clip Studio.P</span>
-              </div>
-              <div class="project-actions">
-                <a href="#" class="btn btn-small">
-                  <i class="fas fa-external-link-alt"></i>
-                  <span>View Demo</span>
-                </a>
-                <a href="#" class="btn btn-small btn-ghost">
-                  <i class="fas fa-code"></i>
-                  <span>Code</span>
-                </a>
+              <div class="stat-content">
+                <h3 class="stat-number">10+</h3>
+                <p class="stat-text">Proyectos lanzados</p>
               </div>
             </div>
           </div>
         </div>
         
-        <div class="projects-grid hidden">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="img/Imagen2.jpg" alt="Load Management System" class="project-img">
-              <div class="project-overlay">
-                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+        <div class="description-section" data-aos="fade-up">
+          <p class="description-text">
+            Desarrollador apasionado enfocado en crear soluciones web innovadoras y eficientes. 
+            Disfruto transformando ideas en productos digitales funcionales y visualmente atractivos.
+          </p>
+          <div class="badges">
+            <div class="badge-item">
+              <div class="badge-icon" style="background-color: #e6e600;">
+                <i class="fas fa-layer-group" style="color: #b3b300;"></i>
               </div>
+              <span class="badge-d">Desarrollador Full Stack</span>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">Load Management System</h3>
-              <p class="project-description">Web application to control processes in a truck management entity.</p>
-              <div class="project-tech">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Clip Studio.P</span>
-                <span class="tech-tag">PostgreSQL</span>
+            <div class="badge-item">
+              <div class="badge-icon" style="background-color: #ffb3e6;">
+                <i class="fas fa-lightbulb" style="color: #cc0099;"></i>
               </div>
-              <div class="project-actions">
-                <a href="#" class="btn btn-small">
-                  <i class="fas fa-external-link-alt"></i>
-                  <span>View Demo</span>
-                </a>
-                <a href="#" class="btn btn-small btn-ghost">
-                  <i class="fas fa-code"></i>
-                  <span>Code</span>
-                </a>
-              </div>
+              <span class="badge-s">Soluciones Innovadoras</span>
             </div>
-          </div>
-          
-          <div class="project-card">
-            <div class="project-image">
-              <img src="img/Imagen5.jpg" alt="Recipe Site" class="project-img">
-              <div class="project-overlay">
-                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+            <div class="badge-item">
+              <div class="badge-icon" style="background-color: #b3ffb3;">
+                <i class="fas fa-code" style="color: #009900;"></i>
               </div>
+              <span class="badge-c">Código Limpio</span>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">Recipe Site</h3>
-              <p class="project-description">Food recipe website.</p>
-              <div class="project-tech">
-                <span class="tech-tag">WordPress</span>
-                <span class="tech-tag">Clip Studio.P</span>
+            <div class="badge-item">
+              <div class="badge-icon" style="background-color: #ffcc99;">
+                <i class="fas fa-paint-brush" style="color: #cc6600;"></i>
               </div>
-              <div class="project-actions">
-                <a href="#" class="btn btn-small">
-                  <i class="fas fa-external-link-alt"></i>
-                  <span>View Demo</span>
-                </a>
-                <a href="#" class="btn btn-small btn-ghost">
-                  <i class="fas fa-code"></i>
-                  <span>Code</span>
-                </a>
-              </div>
+              <span class="badge-e">Enfoque en UX/UI</span>
             </div>
           </div>
-          
-          <div class="project-card">
-            <div class="project-image">
-              <img src="https://source.unsplash.com/random/600x400/?art,gallery" alt="Art Portfolio" class="project-img">
-              <div class="project-overlay">
-                <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
-              </div>
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">Art Portfolio</h3>
-              <p class="project-description">Interactive gallery for visual artist.</p>
-              <div class="project-tech">
-                <span class="tech-tag">HTML/CSS</span>
-                <span class="tech-tag">JavaScript</span>
-              </div>
-              <div class="project-actions">
-                <a href="#" class="btn btn-small">
-                  <i class="fas fa-external-link-alt"></i>
-                  <span>View Demo</span>
-                </a>
-                <a href="#" class="btn btn-small btn-ghost">
-                  <i class="fas fa-code"></i>
-                  <span>Code</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="pagination" data-aos="fade-up">
-          <button class="pagination-btn active" data-page="0">1</button>
-          <button class="pagination-btn" data-page="1">2</button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2><i class="fas fa-envelope"></i> Contact</h2>
-        <p class="section-subtitle">Let's talk about your next project!</p>
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2><i class="fas fa-laptop-code"></i> Tecnologías y Herramientas</h2>
+          <p class="section-subtitle">Lenguajes, frameworks y herramientas que domino</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="100">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+            </div>
+            <div class="skill-name">Java</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="150">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            </div>
+            <div class="skill-name">JavaScript</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="200">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+            </div>
+            <div class="skill-name">HTML5</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="250">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+            </div>
+            <div class="skill-name">CSS3</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="300">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+            </div>
+            <div class="skill-name">Node.js</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="350">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
+            </div>
+            <div class="skill-name">Spring Boot</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="400">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+            </div>
+            <div class="skill-name">PostgreSQL</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="450">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
+            </div>
+            <div class="skill-name">Postman</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="500">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+            </div>
+            <div class="skill-name">VS Code</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="550">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress">
+            </div>
+            <div class="skill-name">WordPress</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="600">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+            </div>
+            <div class="skill-name">Docker</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="650">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            </div>
+            <div class="skill-name">Python</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="700">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            </div>
+            <div class="skill-name">React</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="800">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            </div>
+            <div class="skill-name">Git</div>
+          </div>
+          <div class="skill-item" data-aos="flip-left" data-aos-delay="900">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+            </div>
+            <div class="skill-name">GitHub</div>
+          </div>
+        </div>
       </div>
-      <div class="contact-content">
-        <div class="contact-info" data-aos="fade-right">
-          <div class="contact-card">
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2><i class="fas fa-project-diagram"></i> Mis Proyectos</h2>
+          <p class="section-subtitle">Algunos de mis trabajos recientes</p>
+        </div>
+        <div class="projects-container">
+          <div class="projects-grid">
+            <!-- Proyecto 1 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-image">
+                <img src="img/Imagen4.jpg" alt="Music Application" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Music Application</h3>
+                <p class="project-description">Aplicación de escritorio para gestionar canciones en la radio.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="project-image">
+                <img src="img/Imagen3.jpg" alt="Educational Site" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Educational Site</h3>
+                <p class="project-description">Sistema de Gestión para el Centro Universitario Municipal de Guanajay.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-image">
+                <img src="img/Imagen1.png" alt="Children's Management System" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Children's Management System</h3>
+                <p class="project-description">Sistema para el Jardín Infantil "José Francisco Costa Velázquez".</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 4 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="250">
+              <div class="project-image">
+                <img src="img/Imagen2.jpg" alt="Load Management System" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Load Management System</h3>
+                <p class="project-description">Aplicación web para controlar procesos en una entidad de gestión de camiones.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 5 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-image">
+                <img src="img/Imagen5.jpg" alt="Recipe Site" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Recipe Site</h3>
+                <p class="project-description">Sitio web de recetas de comida.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 6 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="project-image">
+                <img src="https://source.unsplash.com/random/600x400/?art,gallery" alt="Art Portfolio" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Art Portfolio</h3>
+                <p class="project-description">Galería interactiva para artista visual.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 7 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-image">
+                <img src="https://source.unsplash.com/random/600x400/?ecommerce" alt="E-commerce" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">E-commerce Platform</h3>
+                <p class="project-description">Plataforma de comercio electrónico con carrito de compras.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 8 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="250">
+              <div class="project-image">
+                <img src="https://source.unsplash.com/random/600x400/?dashboard" alt="Dashboard" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Analytics Dashboard</h3>
+                <p class="project-description">Dashboard interactivo para visualización de datos.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg" alt="D3.js" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="projects-grid hidden">
+            <!-- Segunda página con 8 proyectos adicionales -->
+            <!-- Proyecto 9 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://source.unsplash.com/random/600x400/?mobile,app" alt="Mobile App" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Mobile Fitness App</h3>
+                <p class="project-description">Aplicación móvil para seguimiento de ejercicios y nutrición.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 10 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://source.unsplash.com/random/600x400/?blog,writing" alt="Blog Platform" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Blog Platform</h3>
+                <p class="project-description">Plataforma de blogs con sistema de comentarios y categorías.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 11 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://source.unsplash.com/random/600x400/?weather,app" alt="Weather App" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Weather Application</h3>
+                <p class="project-description">Aplicación web para consultar el clima en tiempo real.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 12 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://source.unsplash.com/random/600x400/?social,media" alt="Social Media" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Social Media Dashboard</h3>
+                <p class="project-description">Dashboard para gestión de redes sociales y métricas.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 13 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://source.unsplash.com/random/600x400/?finance,money" alt="Finance App" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Personal Finance Tracker</h3>
+                <p class="project-description">Sistema para seguimiento de gastos e ingresos personales.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 14 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://source.unsplash.com/random/600x400/?travel,booking" alt="Travel App" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Travel Booking Platform</h3>
+                <p class="project-description">Plataforma para reservas de hoteles y vuelos.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 15 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://source.unsplash.com/random/600x400/?music,player" alt="Music Player" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Music Streaming App</h3>
+                <p class="project-description">Aplicación web para streaming de música con listas de reproducción.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 16 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://source.unsplash.com/random/600x400/?learning,education" alt="Learning Platform" class="project-img">
+                <div class="project-overlay">
+                  <a href="#" class="preview-btn"><i class="fas fa-expand"></i></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Online Learning Platform</h3>
+                <p class="project-description">Plataforma de cursos en línea con sistema de evaluaciones.</p>
+                <div class="project-tech-icons">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel" class="tech-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="tech-icon">
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-small">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="pagination" data-aos="fade-up">
+            <button class="pagination-btn active" data-page="0">1</button>
+            <button class="pagination-btn" data-page="1">2</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2><i class="fas fa-envelope"></i> Contacto</h2>
+          <p class="section-subtitle">¡Hablemos sobre tu próximo proyecto!</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
             <div class="contact-icon">
               <i class="fas fa-map-marker-alt"></i>
             </div>
             <div class="contact-details">
-              <h3 class="contact-title">Location</h3>
-              <p class="contact-text">Havana, Cuba</p>
+              <h3 class="contact-title">Ubicación</h3>
+              <p class="contact-text">La Habana, Cuba</p>
             </div>
           </div>
-          <div class="contact-card">
+          
+          <div class="contact-card" data-aos="fade-up" data-aos-delay="150">
             <div class="contact-icon">
               <i class="fas fa-envelope"></i>
             </div>
@@ -442,40 +686,50 @@
               <p class="contact-text">markitodiazfaulin@gmail.com</p>
             </div>
           </div>
-          <div class="contact-card">
+          
+          <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
             <div class="contact-icon">
               <i class="fas fa-phone-alt"></i>
             </div>
             <div class="contact-details">
-              <h3 class="contact-title">Phone</h3>
+              <h3 class="contact-title">Teléfono</h3>
               <p class="contact-text">+53 55531928</p>
             </div>
           </div>
-        </div>
-        <div class="social-links" data-aos="fade-left">
-          <h3 class="social-title">My Networks</h3>
-          <div class="social-grid">
-            <a href="https://github.com/Markito333" target="_blank" class="social-card github">
+          
+          <div class="contact-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="contact-icon">
               <i class="fab fa-github"></i>
-              <span class="social-text">GitHub</span>
-            </a>
-            <a href="https://linkedin.com/in/markito-diaz-faulin-300342368" target="_blank" class="social-card linkedin">
+            </div>
+            <div class="contact-details">
+              <h3 class="contact-title">GitHub</h3>
+              <p class="contact-text">Markito333</p>
+            </div>
+          </div>
+          
+          <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="contact-icon">
               <i class="fab fa-linkedin-in"></i>
-              <span class="social-text">LinkedIn</span>
-            </a>
-            <a href="https://twitter.com/@rock030303" target="_blank" class="social-card twitter">
+            </div>
+            <div class="contact-details">
+              <h3 class="contact-title">LinkedIn</h3>
+              <p class="contact-text">Markito Díaz Faulin</p>
+            </div>
+          </div>
+          
+          <div class="contact-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="contact-icon">
               <i class="fab fa-twitter"></i>
-              <span class="social-text">Twitter</span>
-            </a>
-            <a href="https://instagram.com/markito3_3_3" target="_blank" class="social-card instagram">
-              <i class="fab fa-instagram"></i>
-              <span class="social-text">Instagram</span>
-            </a>
+            </div>
+            <div class="contact-details">
+              <h3 class="contact-title">Twitter</h3>
+              <p class="contact-text">@rock030303</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
@@ -488,20 +742,20 @@
         </div>
         <div class="footer-nav" data-aos="fade-up">
           <ul class="footer-links">
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Technologies</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#skills">Tecnologías</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-social" data-aos="fade-left">
-          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/Markito333" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/markito-diaz-faulin-300342368" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/@rock030303" class="social-icon"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
       <div class="footer-bottom" data-aos="fade-up">
-        <p class="copyright">© <span id="current-year"></span> Marcos David. All rights reserved.</p>
+        <p class="copyright">© <span id="current-year"></span> Marcos David. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
@@ -510,8 +764,7 @@
     <i class="fas fa-arrow-up"></i>
   </a>
 
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
