@@ -452,8 +452,8 @@ section {
 }
 
 .skill-icon {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   margin: 0 auto 15px;
   display: flex;
   align-items: center;
@@ -461,14 +461,14 @@ section {
 }
 
 .skill-icon img {
-  width: 100%;
+  width: 80%;
   height: auto;
   object-fit: contain;
 }
 
 .skill-name {
-  font-weight: 600;
-  color: var(--secondary-dark);
+  font-weight: 300;
+  color: #312836;
   font-size: 0.9rem;
 }
 
@@ -873,8 +873,7 @@ section {
   transform: translateY(-5px);
 }
 
-
-/* Responsive - CORREGIDO COMPLETAMENTE */
+/* Responsive - ACTUALIZADO */
 @media (max-width: 1200px) {
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -887,27 +886,23 @@ section {
 
 @media (max-width: 992px) {
   .bento-grid {
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .bento-stats {
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .stat-card {
+    flex: 1;
   }
   
   .profile-section {
-    flex-direction: row;
-    text-align: left;
-    align-items: flex-end;
-  }
-  
-  .profile-image {
-    width: 180px;
-    height: 180px;
-  }
-  
-  .profile-name {
-    font-size: 2rem;
-  }
-  
-  .profile-title {
-    font-size: 1.1rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
   
   .projects-grid {
@@ -915,7 +910,7 @@ section {
   }
   
   .contact-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   
   .footer-content {
@@ -965,44 +960,36 @@ section {
     padding: 150px 0 80px;
   }
   
-  /* BENTO GRID EN MÓVIL - AHORA IGUAL QUE EN PC */
-  .bento-grid {
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
-  }
-  
   .bento-main {
-    padding: 25px;
-  }
-  
-  .profile-section {
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 20px;
+    padding: 30px;
   }
   
   .profile-image {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
   }
   
   .profile-name {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   
   .profile-title {
-    font-size: 1rem;
-    margin-bottom: 15px;
+    font-size: 1.1rem;
   }
   
   .profile-buttons {
-    flex-direction: row;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
   }
   
   .btn {
-    padding: 12px 20px;
-    font-size: 0.9rem;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .bento-stats {
+    flex-direction: row;
+    gap: 15px;
   }
   
   .stat-card {
@@ -1048,40 +1035,26 @@ section {
 }
 
 @media (max-width: 576px) {
-  .bento-grid {
-    grid-template-columns: 2fr 1fr;
-    gap: 12px;
-  }
-  
   .bento-main {
-    padding: 20px;
-  }
-  
-  .profile-section {
-    gap: 15px;
+    padding: 25px;
   }
   
   .profile-image {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
   
   .profile-name {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   
   .profile-title {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
-  .profile-buttons {
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .btn {
-    width: 100%;
-    justify-content: center;
+  .bento-stats {
+    flex-direction: row;
+    gap: 10px;
   }
   
   .stat-card {
@@ -1144,43 +1117,42 @@ section {
 }
 
 /* Media Query para móviles muy pequeños */
-@media (max-width: 580px) {
-  .bento-grid {
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
-  }
-  
+@media (max-width: 480px) {
   .bento-main {
-    padding: 15px;
+    padding: 20px;
   }
   
   .profile-section {
-    flex-direction: row;
-    gap: 12px;
+    flex-direction: column;
+    gap: 20px;
   }
   
   .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
   
   .profile-name {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   
   .profile-title {
-    font-size: 0.8rem;
-    margin-bottom: 10px;
+    font-size: 0.9rem;
   }
   
   .profile-buttons {
     flex-direction: column;
-    gap: 6px;
+    gap: 10px;
   }
   
   .btn {
-    padding: 10px 15px;
-    font-size: 0.8rem;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .bento-stats {
+    flex-direction: row;
+    gap: 8px;
   }
   
   .stat-card {
