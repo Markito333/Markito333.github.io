@@ -1307,3 +1307,93 @@ section {
     flex: 0 0 calc(50% - 8px);
   }
 }
+/* === ELIMINAR SCROLL HORIZONTAL === */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  .bento-grid,
+  .projects-grid,
+  .skills-grid,
+  .contact-grid,
+  .footer-content {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .bento-main,
+  .stat-card,
+  .project-card,
+  .skill-item,
+  .contact-card {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Asegurar que las imágenes no causen overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* === FOTO DE PERFIL MÁS GRANDE === */
+.profile-image {
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 12px; /* Opcional: para mejor apariencia */
+}
+
+.profile-image img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  margin-left: .30px;
+  border-radius: 12px;
+}
+
+/* Ajustes responsive progresivos */
+@media (max-width: 1200px) {
+  .profile-image {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 992px) {
+  .profile-image {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 160px;
+    height: 160px;
+  }
+}
