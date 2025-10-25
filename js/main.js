@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Inicializar AOS
   AOS.init({
     duration: 800,
     easing: 'ease-in-out',
@@ -7,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     offset: 100
   });
 
-  // Navegación suave
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -29,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Navegación activa
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link');
   
@@ -52,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
     
-    // Botón volver arriba
     const backToTop = document.querySelector('.back-to-top');
     if (window.scrollY > 500) {
       backToTop.classList.add('active');
@@ -70,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
     nav.classList.toggle('active');
   });
 
-  // Cerrar menú al hacer clic en un enlace
   const navItems = document.querySelectorAll('.nav-item');
   navItems.forEach(item => {
     item.addEventListener('click', function() {
@@ -110,7 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Año actual en el footer
   const currentYear = document.getElementById('current-year');
   if (currentYear) {
     currentYear.textContent = new Date().getFullYear();

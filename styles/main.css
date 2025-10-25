@@ -1,4 +1,3 @@
-/* Variables CSS */
 :root {
   --primary-color: #8b5cf6;
   --primary-light: #c4b5fd;
@@ -24,7 +23,6 @@
   --glass-backdrop: blur(8px);
 }
 
-/* Reset y estilos base */
 * {
   margin: 0;
   padding: 0;
@@ -112,7 +110,6 @@ section {
   
 }
 
-/* Header */
 .header {
   background-color: var(--glass-effect);
   box-shadow: var(--glass-shadow);
@@ -214,7 +211,6 @@ section {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Hero Section - Bento Grid */
 .hero-section {
   padding: 180px 0 100px;
   position: relative;
@@ -275,7 +271,6 @@ section {
   flex: 1;
 }
 
-/* NOMBRE MÁS BOLD Y CON ESTILO MEJORADO */
 .profile-name {
   font-size: 3rem;
   color: var(--dark-color);
@@ -364,7 +359,6 @@ section {
   font-size: 0.9rem;
 }
 
-/* Description Section */
 .description-section {
   text-align: center;
 }
@@ -434,7 +428,6 @@ section {
   font-weight: 500;
 }
 
-/* Skills Section - ACTUALIZADO MÁS PEQUEÑO */
 .skills-section {
   background-color: var(--light-color);
 }
@@ -490,7 +483,6 @@ section {
   line-height: 1.2;
 }
 
-/* Projects Section */
 .projects-section {
   background-color: var(--white);
 }
@@ -769,7 +761,6 @@ section {
   font-size: 1rem;
 }
 
-/* Footer */
 .footer {
   background-color: var(--glass-effect);
   backdrop-filter: var(--glass-backdrop);
@@ -897,7 +888,6 @@ section {
   transform: translateY(-5px);
 }
 
-/* Responsive - CORREGIDO COMPLETAMENTE */
 @media (max-width: 1200px) {
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -985,7 +975,6 @@ section {
     padding: 150px 0 80px;
   }
   
-  /* BENTO GRID EN MÓVIL - CORREGIDO */
   .bento-grid {
     grid-template-columns: 1fr;
     gap: 15px;
@@ -1017,7 +1006,6 @@ section {
     margin-bottom: 20px;
   }
   
-  /* BOTONES EN LÍNEA EN MÓVIL */
   .profile-buttons {
     flex-direction: row;
     justify-content: center;
@@ -1031,7 +1019,6 @@ section {
     font-size: 0.9rem;
   }
   
-  /* BENTO STATS EN MÓVIL - UNO AL LADO DEL OTRO */
   .bento-stats {
     flex-direction: row;
     gap: 15px;
@@ -1057,7 +1044,6 @@ section {
     font-size: 0.8rem;
   }
   
-  /* SKILLS MÁS PEQUEÑOS EN MÓVIL */
   .skills-grid {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 12px;
@@ -1122,7 +1108,6 @@ section {
     font-size: 0.9rem;
   }
   
-  /* BOTONES MÁS COMPACTOS EN MÓVILES PEQUEÑOS */
   .profile-buttons {
     flex-direction: row;
     gap: 10px;
@@ -1162,7 +1147,6 @@ section {
     font-size: 2rem;
   }
   
-  /* SKILLS AÚN MÁS PEQUEÑOS EN MÓVILES PEQUEÑOS */
   .skills-grid {
     grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     gap: 10px;
@@ -1221,7 +1205,6 @@ section {
   }
 }
 
-/* Media Query para móviles muy pequeños */
 @media (max-width: 480px) {
   .bento-main {
     padding: 15px;
@@ -1245,7 +1228,6 @@ section {
     font-size: 0.8rem;
   }
   
-  /* BOTONES MÁS PEQUEÑOS EN MÓVILES MUY PEQUEÑOS */
   .profile-buttons {
     flex-direction: row;
     gap: 8px;
@@ -1277,7 +1259,6 @@ section {
     font-size: 1.1rem;
   }
   
-  /* SKILLS MÍNIMOS */
   .skills-grid {
     grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
     gap: 8px;
@@ -1311,7 +1292,6 @@ section {
     flex: 0 0 calc(50% - 8px);
   }
 }
-/* === ELIMINAR SCROLL HORIZONTAL === */
 @media (max-width: 768px) {
  
   
@@ -1339,20 +1319,18 @@ section {
     box-sizing: border-box;
   }
   
-  /* Asegurar que las imágenes no causen overflow */
   img {
     max-width: 100%;
     height: auto;
   }
 }
 
-/* === FOTO DE PERFIL MÁS GRANDE === */
 .profile-image {
   width: 260px;
   height: 260px;
   overflow: hidden;
   flex-shrink: 0;
-  border-radius: 12px; /* Opcional: para mejor apariencia */
+  border-radius: 12px; 
 }
 
 .profile-image img {
@@ -1363,7 +1341,6 @@ section {
   border-radius: 12px;
 }
 
-/* Ajustes responsive progresivos */
 @media (max-width: 1200px) {
   .profile-image {
     width: 240px;
