@@ -452,8 +452,8 @@ section {
 }
 
 .skill-icon {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto 15px;
   display: flex;
   align-items: center;
@@ -461,14 +461,14 @@ section {
 }
 
 .skill-icon img {
-  width: 80%;
+  width: 100%;
   height: auto;
   object-fit: contain;
 }
 
 .skill-name {
-  font-weight: 300;
-  color: #312836;
+  font-weight: 600;
+  color: var(--secondary-dark);
   font-size: 0.9rem;
 }
 
