@@ -229,7 +229,7 @@ section {
 }
 
 .bento-main {
-  background-color: #f3eeff;
+  background-color: #f6f3ff;
   border-radius: var(--border-radius);
   padding: 40px;
   border-top: 5px solid #833ab4;
@@ -411,7 +411,7 @@ section {
   font-weight: 500;
 }
 .badge-s {
-  background-color: rgb(255, 241, 255);
+  background-color: rgb(255, 240, 255);
   color: rgb(177, 100, 177);
   padding: 8px 16px;
   border-radius: 20px;
