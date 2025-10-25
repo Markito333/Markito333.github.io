@@ -873,7 +873,8 @@ section {
   transform: translateY(-5px);
 }
 
-/* Responsive */
+
+/* Responsive - CORREGIDO COMPLETAMENTE */
 @media (max-width: 1200px) {
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -886,13 +887,27 @@ section {
 
 @media (max-width: 992px) {
   .bento-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
   }
   
   .profile-section {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-end;
+  }
+  
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .profile-name {
+    font-size: 2rem;
+  }
+  
+  .profile-title {
+    font-size: 1.1rem;
   }
   
   .projects-grid {
@@ -900,7 +915,7 @@ section {
   }
   
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .footer-content {
@@ -950,18 +965,58 @@ section {
     padding: 150px 0 80px;
   }
   
+  /* BENTO GRID EN MÓVIL - AHORA IGUAL QUE EN PC */
+  .bento-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+  
+  .bento-main {
+    padding: 25px;
+  }
+  
+  .profile-section {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;
+  }
+  
+  .profile-image {
+    width: 140px;
+    height: 140px;
+  }
+  
   .profile-name {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+  
+  .profile-title {
+    font-size: 1rem;
+    margin-bottom: 15px;
   }
   
   .profile-buttons {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    gap: 10px;
   }
   
   .btn {
-    width: 100%;
-    max-width: 250px;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .stat-card {
+    padding: 20px;
+  }
+  
+  .stat-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .stat-content h3 {
+    font-size: 1.5rem;
   }
   
   .skills-grid {
@@ -969,13 +1024,18 @@ section {
   }
   
   .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
   
   .badges {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .badge-item {
+    flex: 0 0 calc(50% - 15px);
   }
   
   .back-to-top {
@@ -988,30 +1048,177 @@ section {
 }
 
 @media (max-width: 576px) {
+  .bento-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+  }
+  
   .bento-main {
-    padding: 25px;
+    padding: 20px;
+  }
+  
+  .profile-section {
+    gap: 15px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile-name {
+    font-size: 1.4rem;
+  }
+  
+  .profile-title {
+    font-size: 0.9rem;
+  }
+  
+  .profile-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
   }
   
   .stat-card {
-    padding: 20px;
+    padding: 15px;
+  }
+  
+  .stat-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .stat-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .stat-content p {
+    font-size: 0.8rem;
   }
   
   .section-header h2 {
     font-size: 2rem;
   }
   
-  .profile-image {
-    width: 180px;
-    height: 180px;
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
   
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .project-info {
+    padding: 20px;
+  }
+  
+  .project-title {
+    font-size: 1.2rem;
   }
   
   .badges {
+    gap: 10px;
+  }
+  
+  .badge-item {
+    flex: 0 0 calc(50% - 10px);
+  }
+  
+  .badge-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .badge-d, .badge-s, .badge-c, .badge-e {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media Query para móviles muy pequeños */
+@media (max-width: 580px) {
+  .bento-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+  
+  .bento-main {
+    padding: 15px;
+  }
+  
+  .profile-section {
+    flex-direction: row;
+    gap: 12px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profile-name {
+    font-size: 1.2rem;
+  }
+  
+  .profile-title {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .profile-buttons {
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    gap: 6px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+  }
+  
+  .stat-card {
+    padding: 12px;
+  }
+  
+  .stat-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  
+  .stat-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .project-info {
+    padding: 15px;
+  }
+  
+  .project-title {
+    font-size: 1rem;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+  }
+  
+  .badges {
+    gap: 8px;
+  }
+  
+  .badge-item {
+    flex: 0 0 calc(50% - 8px);
   }
 }
