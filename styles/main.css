@@ -104,10 +104,13 @@ section {
 }
 
 .section-subtitle {
-  color: var(--secondary-color);
+  color: #7b64ad;
+  background-color: #f0e9ff;
   font-size: 1.1rem;
-  max-width: 700px;
+  max-width: 500px;
   margin: 0 auto;
+  border-radius: 20px;
+  
 }
 
 /* Header */
@@ -227,10 +230,10 @@ section {
 }
 
 .bento-main {
-  background-color: #ede7ff;
+  background-color: #f3eeff;
   border-radius: var(--border-radius);
   padding: 40px;
-  border-top: solid #833ab4;
+  border-top: 5px solid #833ab4;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -273,16 +276,26 @@ section {
   flex: 1;
 }
 
+/* NOMBRE MÁS BOLD Y CON ESTILO MEJORADO */
 .profile-name {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: var(--dark-color);
   margin-bottom: 10px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, var(--dark-color) 0%, #2d3748 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
 }
 
 .profile-title {
   font-size: 1.3rem;
   color: var(--secondary-dark);
   margin-bottom: 25px;
+  font-weight: 500;
 }
 
 .profile-buttons {
@@ -391,7 +404,7 @@ section {
 }
 
 .badge-d {
-  background-color: rgb(255, 255, 223);
+  background-color: rgb(255, 255, 228);
   color: var(--black);
   padding: 8px 16px;
   border-radius: 20px;
@@ -399,7 +412,7 @@ section {
   font-weight: 500;
 }
 .badge-s {
-  background-color: rgb(255, 216, 255);
+  background-color: rgb(255, 231, 255);
   color: var(--black);
   padding: 8px 16px;
   border-radius: 20px;
@@ -407,7 +420,7 @@ section {
   font-weight: 500;
 }
 .badge-c {
-  background-color: rgb(213, 255, 213);
+  background-color: rgb(227, 255, 227);
   color: var(--black);
   padding: 8px 16px;
   border-radius: 20px;
@@ -415,7 +428,7 @@ section {
   font-weight: 500;
 }
 .badge-e {
-  background-color: rgb(255, 224, 213);
+  background-color: rgb(255, 234, 227);
   color: var(--black);
   padding: 8px 16px;
   border-radius: 20px;
@@ -991,7 +1004,8 @@ section {
   }
   
   .profile-name {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 800;
   }
   
   .profile-title {
@@ -999,15 +1013,18 @@ section {
     margin-bottom: 20px;
   }
   
+  /* BOTONES EN LÍNEA EN MÓVIL */
   .profile-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
   }
   
   .btn {
-    width: 100%;
-    max-width: 200px;
+    width: auto;
+    min-width: 140px;
+    padding: 12px 20px;
+    font-size: 0.9rem;
   }
   
   /* BENTO STATS EN MÓVIL - UNO AL LADO DEL OTRO */
@@ -1093,11 +1110,24 @@ section {
   }
   
   .profile-name {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 800;
   }
   
   .profile-title {
     font-size: 0.9rem;
+  }
+  
+  /* BOTONES MÁS COMPACTOS EN MÓVILES PEQUEÑOS */
+  .profile-buttons {
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .btn {
+    min-width: 130px;
+    padding: 10px 16px;
+    font-size: 0.85rem;
   }
   
   .bento-stats {
@@ -1203,10 +1233,23 @@ section {
   }
   
   .profile-name {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 800;
   }
   
   .profile-title {
+    font-size: 0.8rem;
+  }
+  
+  /* BOTONES MÁS PEQUEÑOS EN MÓVILES MUY PEQUEÑOS */
+  .profile-buttons {
+    flex-direction: row;
+    gap: 8px;
+  }
+  
+  .btn {
+    min-width: 120px;
+    padding: 8px 12px;
     font-size: 0.8rem;
   }
   
