@@ -423,38 +423,44 @@ section {
   font-weight: 500;
 }
 
-/* Skills Section */
+/* Skills Section - ACTUALIZADO MÁS PEQUEÑO */
 .skills-section {
   background-color: var(--light-color);
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 15px;
   margin-top: 40px;
 }
 
 .skill-item {
   background-color: var(--white);
-  border-radius: var(--border-radius);
-  padding: 25px 15px;
+  border-radius: var(--border-radius-sm);
+  padding: 15px 10px;
   text-align: center;
+  width: 90px;
+  height: 90px;
   transition: var(--transition);
   box-shadow: var(--box-shadow);
   border: 1px solid var(--secondary-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .skill-item:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: var(--box-shadow-lg);
   border-color: var(--primary-color);
 }
 
 .skill-icon {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 15px;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -467,9 +473,10 @@ section {
 }
 
 .skill-name {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--secondary-dark);
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
 }
 
 /* Projects Section */
@@ -873,7 +880,7 @@ section {
   transform: translateY(-5px);
 }
 
-/* Responsive - ACTUALIZADO */
+/* Responsive - CORREGIDO COMPLETAMENTE */
 @media (max-width: 1200px) {
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -897,6 +904,7 @@ section {
   
   .stat-card {
     flex: 1;
+    min-height: 120px;
   }
   
   .profile-section {
@@ -960,33 +968,49 @@ section {
     padding: 150px 0 80px;
   }
   
+  /* BENTO GRID EN MÓVIL - CORREGIDO */
+  .bento-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
   .bento-main {
-    padding: 30px;
+    padding: 25px;
+    min-height: auto;
+  }
+  
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
   }
   
   .profile-image {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
   }
   
   .profile-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .profile-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 20px;
   }
   
   .profile-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
   
   .btn {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
   }
   
+  /* BENTO STATS EN MÓVIL - UNO AL LADO DEL OTRO */
   .bento-stats {
     flex-direction: row;
     gap: 15px;
@@ -994,6 +1018,8 @@ section {
   
   .stat-card {
     padding: 20px;
+    flex: 1;
+    min-height: 100px;
   }
   
   .stat-icon {
@@ -1006,13 +1032,35 @@ section {
     font-size: 1.5rem;
   }
   
+  .stat-content p {
+    font-size: 0.8rem;
+  }
+  
+  /* SKILLS MÁS PEQUEÑOS EN MÓVIL */
   .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 12px;
+  }
+  
+  .skill-item {
+    width: 80px;
+    height: 80px;
+    padding: 12px 8px;
+  }
+  
+  .skill-icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 6px;
+  }
+  
+  .skill-name {
+    font-size: 0.7rem;
   }
   
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
   }
   
   .badges {
@@ -1036,20 +1084,20 @@ section {
 
 @media (max-width: 576px) {
   .bento-main {
-    padding: 25px;
+    padding: 20px;
   }
   
   .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
   
   .profile-name {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   
   .profile-title {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   .bento-stats {
@@ -1059,6 +1107,7 @@ section {
   
   .stat-card {
     padding: 15px;
+    min-height: 90px;
   }
   
   .stat-icon {
@@ -1072,16 +1121,38 @@ section {
   }
   
   .stat-content p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
   
   .section-header h2 {
     font-size: 2rem;
   }
   
+  /* SKILLS AÚN MÁS PEQUEÑOS EN MÓVILES PEQUEÑOS */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 10px;
+  }
+  
+  .skill-item {
+    width: 70px;
+    height: 70px;
+    padding: 10px 6px;
+  }
+  
+  .skill-icon {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 5px;
+  }
+  
+  .skill-name {
+    font-size: 0.65rem;
+  }
+  
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 12px;
   }
   
   .project-info {
@@ -1119,35 +1190,24 @@ section {
 /* Media Query para móviles muy pequeños */
 @media (max-width: 480px) {
   .bento-main {
-    padding: 20px;
+    padding: 15px;
   }
   
   .profile-section {
-    flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
   
   .profile-image {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
   
   .profile-name {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   .profile-title {
-    font-size: 0.9rem;
-  }
-  
-  .profile-buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .btn {
-    padding: 12px 20px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   
   .bento-stats {
@@ -1157,6 +1217,7 @@ section {
   
   .stat-card {
     padding: 12px;
+    min-height: 80px;
   }
   
   .stat-icon {
@@ -1169,21 +1230,30 @@ section {
     font-size: 1.1rem;
   }
   
+  /* SKILLS MÍNIMOS */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+    gap: 8px;
+  }
+  
+  .skill-item {
+    width: 65px;
+    height: 65px;
+    padding: 8px 5px;
+  }
+  
+  .skill-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .skill-name {
+    font-size: 0.6rem;
+  }
+  
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-  
-  .project-info {
-    padding: 15px;
-  }
-  
-  .project-title {
-    font-size: 1rem;
-  }
-  
-  .project-description {
-    font-size: 0.9rem;
+    gap: 10px;
   }
   
   .badges {
