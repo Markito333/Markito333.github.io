@@ -36,7 +36,6 @@ body {
   line-height: 1.6;
   color: var(--dark-color);
   background-color: var(--white);
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -404,32 +403,32 @@ section {
 }
 
 .badge-d {
-  background-color: rgb(255, 255, 228);
-  color: var(--black);
+  background-color: rgb(253, 253, 227);
+  color: rgb(224, 224, 57);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
 }
 .badge-s {
-  background-color: rgb(255, 231, 255);
-  color: var(--black);
+  background-color: rgb(255, 241, 255);
+  color: rgb(177, 100, 177);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
 }
 .badge-c {
-  background-color: rgb(227, 255, 227);
-  color: var(--black);
+  background-color: rgb(235, 255, 235);
+  color: rgb(100, 201, 100);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
 }
 .badge-e {
-  background-color: rgb(255, 234, 227);
-  color: var(--black);
+  background-color: rgb(255, 241, 237);
+  color: rgb(218, 142, 117);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -826,7 +825,13 @@ section {
   color: var(--primary-color);
   padding-left: 5px;
 }
-
+.viewdemo{
+  background-color: #f1eaff;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  color: #7c3aed;
+  }
 .footer-social {
   display: flex;
   justify-content: flex-end;
@@ -1309,10 +1314,7 @@ section {
 }
 /* === ELIMINAR SCROLL HORIZONTAL === */
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-    width: 100%;
-  }
+ 
   
   .container {
     width: 100%;
