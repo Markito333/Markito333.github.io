@@ -1528,3 +1528,28 @@ section {
   background-color: #fde68a !important;
   transform: translateY(-3px);
 }
+/* Eliminar scroll horizontal */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Asegurar que todos los elementos respeten el ancho del contenedor */
+* {
+  box-sizing: border-box;
+}
+
+/* Contenedor principal más restrictivo */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+/* Revisar elementos que puedan causar overflow */
+section {
+  width: 100%;
+  overflow: hidden;
+}
