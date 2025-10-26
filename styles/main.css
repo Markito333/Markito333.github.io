@@ -396,32 +396,32 @@ section {
 }
 
 .badge-d {
-  background-color: rgb(253, 253, 227);
-  color: rgb(177, 177, 52);
+  background-color: rgb(250, 244, 255);
+  color: rgb(82, 63, 90);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
 }
 .badge-s {
-  background-color: rgb(255, 240, 255);
-  color: rgb(177, 100, 177);
+  background-color: rgb(255, 231, 255);
+  color: rgb(82, 63, 90);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
 }
 .badge-c {
-  background-color: rgb(235, 255, 235);
-  color: rgb(100, 201, 100);
+  background-color: rgb(241, 224, 255);
+  color: rgb(82, 63, 90);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
 }
 .badge-e {
-  background-color: rgb(255, 243, 240);
-  color: rgb(218, 142, 117);
+  background-color: rgb(230, 199, 255);
+  color: rgb(82, 63, 90);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -516,7 +516,9 @@ section {
   transition: var(--transition);
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 90%;
+    border-top: 5px solid rgb(204, 171, 218);
+
 }
 
 .project-card:hover {
@@ -1374,4 +1376,155 @@ section {
     width: 160px;
     height: 160px;
   }
+}
+.private-badge {
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  background-color: rgb(255, 234, 234);
+  color: #da2a2a;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 10;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.modal-content {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--box-shadow-lg);
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.modal.active .modal-content {
+  transform: scale(1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px 0;
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  color: var(--dark-color);
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.modal-close:hover {
+  background-color: var(--secondary-light);
+  color: var(--dark-color);
+}
+
+.modal-body {
+  padding: 0 30px 30px;
+}
+
+.modal-message {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+}
+
+.modal-message i {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  display: block;
+}
+
+.modal-message p {
+  color: var(--secondary-dark);
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.modal-gallery-item {
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.modal-gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.modal-gallery-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.progress-project {
+  background-color: #fef3c7 !important;
+  color: #d97706 !important;
+}
+
+.progress-project:hover {
+  background-color: #fde68a !important;
+  transform: translateY(-3px);
 }
