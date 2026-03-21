@@ -1,16 +1,16 @@
 :root {
-  --primary-color: #8b5cf6;
-  --primary-light: #c4b5fd;
-  --primary-dark: #7c3aed;
-  --secondary-color: #6b7280;
-  --secondary-light: #e5e7eb;
-  --secondary-dark: #374151;
-  --light-color: #f9fafb;
-  --dark-color: #111827;
+  --primary-color: #d97706;
+  --primary-light: #fde68a;
+  --primary-dark: #b45309;
+  --secondary-color: #92400e;
+  --secondary-light: #fef3c7;
+  --secondary-dark: #78350f;
+  --light-color: #fffbf0;
+  --dark-color: #1c1207;
   --white: #ffffff;
   --black: #252525;
-  --success-color: #10b981;
-  --error-color: #ef4444;
+  --success-color: #059669;
+  --error-color: #dc2626;
   
   --border-radius: 12px;
   --border-radius-sm: 8px;
@@ -101,8 +101,8 @@ section {
 }
 
 .section-subtitle {
-  color: #7b64ad;
-  background-color: #f0e9ff;
+  color: #b45309;
+  background-color: #fef3c7;
   font-size: 1.1rem;
   max-width: 500px;
   margin: 0 auto;
@@ -225,10 +225,10 @@ section {
 }
 
 .bento-main {
-  background-color: #f6f3ff;
+  background-color: #fef3c7;
   border-radius: var(--border-radius);
   padding: 40px;
-  border-top: 5px solid #833ab4;
+  border-top: 5px solid #d97706;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -396,7 +396,7 @@ section {
 }
 
 .badge-d {
-  background-color: rgb(250, 244, 255);
+  background-color: rgb(253, 255, 244);
   color: rgb(82, 63, 90);
   padding: 8px 16px;
   border-radius: 20px;
@@ -404,7 +404,7 @@ section {
   font-weight: 500;
 }
 .badge-s {
-  background-color: rgb(255, 231, 255);
+  background-color: rgb(252, 255, 231);
   color: rgb(82, 63, 90);
   padding: 8px 16px;
   border-radius: 20px;
@@ -412,7 +412,7 @@ section {
   font-weight: 500;
 }
 .badge-c {
-  background-color: rgb(241, 224, 255);
+  background-color: rgb(255, 253, 224);
   color: rgb(82, 63, 90);
   padding: 8px 16px;
   border-radius: 20px;
@@ -420,7 +420,7 @@ section {
   font-weight: 500;
 }
 .badge-e {
-  background-color: rgb(230, 199, 255);
+  background-color: rgb(255, 245, 199);
   color: rgb(82, 63, 90);
   padding: 8px 16px;
   border-radius: 20px;
@@ -818,11 +818,11 @@ section {
   padding-left: 5px;
 }
 .viewdemo{
-  background-color: #f1eaff;
+  background-color: #fef3c7;
   width: 100px;
   text-align: center;
   border-radius: 10px;
-  color: #7c3aed;
+  color: #b45309;
   }
 .footer-social {
   display: flex;
