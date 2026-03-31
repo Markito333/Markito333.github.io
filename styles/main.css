@@ -622,7 +622,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 14px 30px;
+  padding: 6px 6px;
   border-radius: var(--border-radius);
   font-weight: 600;
   transition: var(--transition);
@@ -657,6 +657,30 @@ section {
   color: var(--white);
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+}
+
+.btn-caramel {
+  background-color: #1c1207;
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(28, 18, 7, 0.25);
+}
+
+.btn-caramel:hover {
+  background-color: #3d2a14;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(28, 18, 7, 0.35);
+}
+
+.btn-outline {
+  background-color: #e4e4e4;
+  color: #555;
+}
+
+.btn-outline:hover {
+  background-color: #eee;
+  color: #333;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .btn-small {
