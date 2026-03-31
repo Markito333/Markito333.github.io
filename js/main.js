@@ -6,73 +6,95 @@ document.addEventListener('DOMContentLoaded', function() {
     offset: 100
   });
 
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  const navOverlay = document.querySelector('.nav-overlay');
+  const navClose = document.querySelector('.nav-close');
+  const navLinks = document.querySelectorAll('.nav-links .nav-link');
+
+  function openMenu() {
+    menuToggle.classList.add('active');
+    navMenu.classList.add('active');
+    navOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    menuToggle.classList.remove('active');
+    navMenu.classList.remove('active');
+    navOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  menuToggle.addEventListener('click', function() {
+    if (navMenu.classList.contains('active')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  navOverlay.addEventListener('click', closeMenu);
+  navClose.addEventListener('click', closeMenu);
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      closeMenu();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        setTimeout(() => {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }, 300);
+      }
+    });
+  });
+
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
-      
       const targetId = this.getAttribute('href');
       const targetElement = document.querySelector(targetId);
-      
       if (targetElement) {
         window.scrollTo({
           top: targetElement.offsetTop - 80,
           behavior: 'smooth'
         });
-        
-        if (nav.classList.contains('active')) {
-          menuToggle.classList.remove('active');
-          nav.classList.remove('active');
-        }
       }
     });
   });
 
   const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('.nav-link');
-  
+  const desktopNavLinks = document.querySelectorAll('.nav-item .nav-link');
+
   window.addEventListener('scroll', function() {
     let current = '';
-    
+
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-      
+
       if (window.scrollY >= sectionTop - 300) {
         current = section.getAttribute('id');
       }
     });
-    
-    navLinks.forEach(link => {
+
+    desktopNavLinks.forEach(link => {
       link.classList.remove('active');
       if (link.getAttribute('href') === `#${current}`) {
         link.classList.add('active');
       }
     });
-    
+
     const backToTop = document.querySelector('.back-to-top');
     if (window.scrollY > 500) {
       backToTop.classList.add('active');
     } else {
       backToTop.classList.remove('active');
     }
-  });
-
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav');
-  
-  menuToggle.addEventListener('click', function() {
-    this.classList.toggle('active');
-    nav.classList.toggle('active');
-  });
-
-  const navItems = document.querySelectorAll('.nav-item');
-  navItems.forEach(item => {
-    item.addEventListener('click', function() {
-      if (nav.classList.contains('active')) {
-        menuToggle.classList.remove('active');
-        nav.classList.remove('active');
-      }
-    });
   });
 
   // Paginación de todos los proyectos
