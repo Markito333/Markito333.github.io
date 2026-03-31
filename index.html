@@ -657,71 +657,34 @@
     </section>
 
     <section id="contact" class="contact-section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2><i class="fas fa-envelope"></i> Contacto</h2>
-          <p class="section-subtitle">¡Hablemos sobre tu próximo proyecto!</p>
+      <div class="contact-container" data-aos="fade-up">
+        <div class="contact-header">
+          <h2 class="contact-title">Hablemos</h2>
+          <p class="contact-subtitle">¿Tienes un proyecto en mente?<br>Escríbeme y hagamos algo increíble juntos.</p>
         </div>
-        <div class="contact-grid">
-          <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="contact-details">
-              <h3 class="contact-title">Ubicación</h3>
-              <p class="contact-text">La Habana, Cuba</p>
-            </div>
-          </div>
-          
-          <div class="contact-card" data-aos="fade-up" data-aos-delay="150">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="contact-details">
-              <h3 class="contact-title">Email</h3>
-              <p class="contact-text">markitodiazfaulin@gmail.com</p>
-            </div>
-          </div>
-          
-          <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="contact-icon">
-              <i class="fas fa-phone-alt"></i>
-            </div>
-            <div class="contact-details">
-              <h3 class="contact-title">Teléfono</h3>
-              <p class="contact-text">+53 55531928</p>
-            </div>
-          </div>
-          
-          <div class="contact-card" data-aos="fade-up" data-aos-delay="250">
-            <div class="contact-icon">
-              <i class="fab fa-github"></i>
-            </div>
-            <div class="contact-details">
-              <h3 class="contact-title">GitHub</h3>
-              <p class="contact-text">Markito333</p>
-            </div>
-          </div>
-          
-          <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="contact-icon">
-              <i class="fab fa-linkedin-in"></i>
-            </div>
-            <div class="contact-details">
-              <h3 class="contact-title">LinkedIn</h3>
-              <p class="contact-text">Markito Díaz Faulin</p>
-            </div>
-          </div>
-          
-          <div class="contact-card" data-aos="fade-up" data-aos-delay="350">
-            <div class="contact-icon">
-              <i class="fab fa-twitter"></i>
-            </div>
-            <div class="contact-details">
-              <h3 class="contact-title">Twitter</h3>
-              <p class="contact-text">@rock030303</p>
-            </div>
-          </div>
+        <div class="contact-links">
+          <a href="mailto:markitodiazfaulin@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span>markitodiazfaulin@gmail.com</span>
+          </a>
+          <a href="https://github.com/Markito333" target="_blank" class="contact-link">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/markito-diaz-faulin-300342368" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://twitter.com/@rock030303" target="_blank" class="contact-link">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+        </div>
+        <div class="contact-cta">
+          <a href="mailto:markitodiazfaulin@gmail.com" class="cta-button">
+            <i class="fas fa-paper-plane"></i>
+            Enviar mensaje
+          </a>
         </div>
       </div>
     </section>
@@ -730,28 +693,27 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-brand" data-aos="fade-right">
+        <div class="footer-left">
           <div class="footer-logo">
             <i class="fas fa-code"></i>
             <span>MarkitoDev</span>
           </div>
+          <p class="footer-tagline">Desarrollador Web Full Stack</p>
         </div>
-        <div class="footer-nav" data-aos="fade-up">
-          <ul class="footer-links">
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#skills">Tecnologías</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </div>
-        <div class="footer-social" data-aos="fade-left">
-          <a href="https://github.com/Markito333" class="social-icon"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/markito-diaz-faulin-300342368" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://twitter.com/@rock030303" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <nav class="footer-nav">
+          <a href="#about">Sobre mí</a>
+          <a href="#skills">Tecnologías</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://github.com/Markito333" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/markito-diaz-faulin-300342368" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/@rock030303" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
-      <div class="footer-bottom" data-aos="fade-up">
-        <p class="copyright">© <span id="current-year"></span> Marcos David. Todos los derechos reservados.</p>
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> Marcos David</p>
       </div>
     </div>
   </footer>
