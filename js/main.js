@@ -6,27 +6,24 @@ document.addEventListener('DOMContentLoaded', function() {
     offset: 100
   });
 
-  const menuToggle = document.querySelector('.menu-toggle');
+  const menuFab = document.querySelector('.menu-fab');
   const navMenu = document.querySelector('.nav-menu');
-  const navOverlay = document.querySelector('.nav-overlay');
-  const navClose = document.querySelector('.nav-close');
-  const navLinks = document.querySelectorAll('.nav-links .nav-link');
+  const menuOverlay = document.querySelector('.menu-overlay');
+  const navItems = document.querySelectorAll('.nav-item');
 
   function openMenu() {
-    menuToggle.classList.add('active');
     navMenu.classList.add('active');
-    navOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
+    menuOverlay.classList.add('active');
+    menuFab.innerHTML = '<i class="fas fa-times"></i>';
   }
 
   function closeMenu() {
-    menuToggle.classList.remove('active');
     navMenu.classList.remove('active');
-    navOverlay.classList.remove('active');
-    document.body.style.overflow = '';
+    menuOverlay.classList.remove('active');
+    menuFab.innerHTML = '<i class="fas fa-bars"></i>';
   }
 
-  menuToggle.addEventListener('click', function() {
+  menuFab.addEventListener('click', function() {
     if (navMenu.classList.contains('active')) {
       closeMenu();
     } else {
@@ -34,10 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  navOverlay.addEventListener('click', closeMenu);
-  navClose.addEventListener('click', closeMenu);
+  menuOverlay.addEventListener('click', closeMenu);
 
-  navLinks.forEach(link => {
+  navItems.forEach(link => {
     link.addEventListener('click', function() {
       closeMenu();
       const targetId = this.getAttribute('href');
