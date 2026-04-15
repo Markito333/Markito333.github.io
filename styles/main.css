@@ -535,7 +535,6 @@ section {
 
 .project-card {
   background-color: var(--white);
-  border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--box-shadow);
   transition: var(--transition);
