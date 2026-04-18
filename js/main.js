@@ -1,3 +1,13 @@
+import Menu from './menu.js';
+import Pagination from './pagination.js';
+import Modal from './modal.js';
+
+const privateMessages = {
+  'children-management': 'Sistema de gestión desarrollado para el Jardín Infantil "José Francisco Costa Velázquez". Por políticas de seguridad y confidencialidad, este proyecto no está disponible para acceso público.',
+  'educational-site': 'Plataforma educativa desarrollada para el Centro Universitario Municipal de Guanajay. Este es un sistema interno y no está disponible para visualización pública.',
+  'remesas-system': 'Sistema de envío de remesas entre agentes de empresas privadas. Por seguridad y políticas corporativas, este proyecto es de acceso restringido.'
+};
+
 document.addEventListener('DOMContentLoaded', function() {
   AOS.init({
     duration: 800,
@@ -6,37 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
     offset: 100
   });
 
+  new Menu();
+  new Pagination();
+  new Modal({ messages: privateMessages });
+
   const menuFab = document.querySelector('.menu-fab');
-  const navMenu = document.querySelector('.nav-menu');
-  const menuOverlay = document.querySelector('.menu-overlay');
   const navItems = document.querySelectorAll('.nav-item');
 
-  function openMenu() {
-    navMenu.classList.add('active');
-    menuOverlay.classList.add('active');
-    menuFab.innerHTML = '<i class="fas fa-times"></i>';
-  }
-
-  function closeMenu() {
-    navMenu.classList.remove('active');
-    menuOverlay.classList.remove('active');
-    menuFab.innerHTML = '<i class="fas fa-bars"></i>';
-  }
-
-  menuFab.addEventListener('click', function() {
-    if (navMenu.classList.contains('active')) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
-  });
-
-  menuOverlay.addEventListener('click', closeMenu);
-
   navItems.forEach(link => {
-    link.addEventListener('click', function() {
-      closeMenu();
-      const targetId = this.getAttribute('href');
+    link.addEventListener('click', () => {
+      const targetId = link.getAttribute('href');
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         setTimeout(() => {
@@ -64,159 +53,29 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   const sections = document.querySelectorAll('section');
-  const desktopNavLinks = document.querySelectorAll('.nav-item .nav-link');
 
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', () => {
     let current = '';
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-
       if (window.scrollY >= sectionTop - 300) {
         current = section.getAttribute('id');
       }
     });
 
-    desktopNavLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
-        link.classList.add('active');
-      }
-    });
-
     const backToTop = document.querySelector('.back-to-top');
-    if (window.scrollY > 500) {
-      backToTop.classList.add('active');
-    } else {
-      backToTop.classList.remove('active');
+    if (backToTop) {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('active');
+      } else {
+        backToTop.classList.remove('active');
+      }
     }
-  });
-
-  // Paginación de todos los proyectos
-  const projectGrids = document.querySelectorAll('.projects-grid');
-  const paginationButtons = document.querySelectorAll('.pagination-btn');
-  
-  projectGrids.forEach((grid, index) => {
-    if (index === 0) {
-      grid.classList.remove('hidden');
-    } else {
-      grid.classList.add('hidden');
-    }
-  });
-  
-  paginationButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const pageIndex = parseInt(this.getAttribute('data-page'));
-      
-      paginationButtons.forEach(btn => btn.classList.remove('active'));
-      this.classList.add('active');
-      
-      projectGrids.forEach((grid, index) => {
-        if (index === pageIndex) {
-          grid.classList.remove('hidden');
-        } else {
-          grid.classList.add('hidden');
-        }
-      });
-    });
   });
 
   const currentYear = document.getElementById('current-year');
   if (currentYear) {
     currentYear.textContent = new Date().getFullYear();
   }
-});
-// para el modal
-const privateModal = document.getElementById('privateModal');
-const progressModal = document.getElementById('progressModal');
-const modalMessage = document.getElementById('modalMessage');
-const modalGallery = document.getElementById('modalGallery');
-const progressGallery = document.getElementById('progressGallery');
-
-// mensajes segun el proyecto privado
-const privateMessages = {
-  'children-management': 'Sistema de gestión desarrollado para el Jardín Infantil "José Francisco Costa Velázquez". Por políticas de seguridad y confidencialidad, este proyecto no está disponible para acceso público.',
-  'educational-site': 'Plataforma educativa desarrollada para el Centro Universitario Municipal de Guanajay. Este es un sistema interno y no está disponible para visualización pública.',
-  'remesas-system': 'Sistema de envío de remesas entre agentes de empresas privadas. Por seguridad y políticas corporativas, este proyecto es de acceso restringido.'
-};
-
-function openModal(modal, projectId = null, images = '') {
-  if (modal === privateModal && projectId && privateMessages[projectId]) {
-    modalMessage.textContent = privateMessages[projectId];
-  }
-  
-  const gallery = modal === privateModal ? modalGallery : progressGallery;
-  loadGallery(gallery, images);
-  
-  modal.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeModal(modal) {
-  modal.classList.remove('active');
-  document.body.style.overflow = 'auto';
-}
-
-function loadGallery(galleryElement, imagesString) {
-  galleryElement.innerHTML = '';
-  
-  if (!imagesString) return;
-  
-  const images = imagesString.split(',');
-  images.forEach(imageSrc => {
-    const galleryItem = document.createElement('div');
-    galleryItem.className = 'modal-gallery-item';
-    
-    const img = document.createElement('img');
-    img.src = imageSrc.trim();
-    img.alt = 'Preview del proyecto';
-    img.loading = 'lazy';
-    
-    galleryItem.appendChild(img);
-    galleryElement.appendChild(galleryItem);
-  });
-}
-
-document.querySelectorAll('.modal-close').forEach(closeBtn => {
-  closeBtn.addEventListener('click', function() {
-    const modal = this.closest('.modal');
-    closeModal(modal);
-  });
-});
-
-document.querySelectorAll('.modal').forEach(modal => {
-  modal.addEventListener('click', function(e) {
-    if (e.target === this) {
-      closeModal(this);
-    }
-  });
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') {
-    document.querySelectorAll('.modal').forEach(modal => {
-      if (modal.classList.contains('active')) {
-        closeModal(modal);
-      }
-    });
-  }
-});
-
-document.querySelectorAll('.private-project').forEach(button => {
-  button.addEventListener('click', function(e) {
-    e.preventDefault();
-    const projectId = this.getAttribute('data-project');
-    const images = this.getAttribute('data-images') || '';
-    openModal(privateModal, projectId, images);
-  });
-});
-
-document.querySelectorAll('.progress-project').forEach(button => {
-  button.addEventListener('click', function(e) {
-    e.preventDefault();
-    const projectId = this.getAttribute('data-project');
-    const images = this.getAttribute('data-images') || '';
-    openModal(progressModal, null, images);
-  });
 });
