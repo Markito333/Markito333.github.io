@@ -1,0 +1,26 @@
+:root {
+  --primary-color: #4b2e1e;
+  --primary-light: #A8C686;
+  --primary-dark: #2B2B2B;
+  --secondary-color: #2E4A63;
+  --secondary-light: #F2EDE3;
+  --secondary-dark: #2B2B2B;
+  --light-color: #ffffff;
+  --dark-color: #2B2B2B;
+  --white: #ffffff;
+  --black: #2B2B2B;
+  --success-color: #059669;
+  --error-color: #dc2626;
+  --border-color: #C9C9C9;
+  --hover-color: #D8D8D8;
+  
+  --border-radius: 12px;
+  --border-radius-sm: 8px;
+  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --glass-effect: rgba(255, 255, 255, 0.9);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --glass-backdrop: blur(8px);
+}
