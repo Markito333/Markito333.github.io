@@ -14,7 +14,15 @@ class Menu {
     this.overlay?.addEventListener('click', () => this.close());
     
     this.items.forEach(item => {
-      item.addEventListener('click', () => this.close());
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = item.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        this.close();
+      });
     });
   }
 
