@@ -11,6 +11,7 @@
   transition: var(--transition);
   border: none;
   cursor: pointer;
+  font-size: 12px;
 }
 
 .btn i {
@@ -43,7 +44,7 @@
 }
 
 .btn-caramel {
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(24, 24, 24);
   color: var(--white);
 }
 
@@ -54,9 +55,8 @@
 }
 
 .btn-outline {
-  background-color: var(--white);
-  color: var(--dark-color);
-  border: 2px solid var(--border-color);
+  background-color: rgb(239, 239, 239);
+  color:black;
 }
 
 .btn-outline:hover {
