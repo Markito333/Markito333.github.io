@@ -11,6 +11,17 @@
 }
 
 @media (max-width: 992px) {
+  .hero-banner {
+    height: 300px;
+  }
+
+  .hero-banner .profile-image {
+    left: 40px;
+    bottom: -60px;
+    width: 130px;
+    height: 130px;
+  }
+
   .bento-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -30,6 +41,10 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+
+  .profile-info {
+    padding-left: 0;
   }
   
   .projects-grid {
@@ -57,6 +72,17 @@
   
   .hero-section {
     padding: 100px 0 80px;
+  }
+  
+  .hero-banner {
+    height: 250px;
+  }
+
+  .hero-banner .profile-image {
+    left: 30px;
+    bottom: -55px;
+    width: 120px;
+    height: 120px;
   }
   
   .bento-grid {
@@ -203,6 +229,17 @@
 }
 
 @media (max-width: 576px) {
+  .hero-banner {
+    height: 200px;
+  }
+
+  .hero-banner .profile-image {
+    left: 20px;
+    bottom: -50px;
+    width: 110px;
+    height: 110px;
+  }
+
   .bento-main {
     padding: 20px;
   }
@@ -319,6 +356,17 @@
 }
 
 @media (max-width: 480px) {
+  .hero-banner {
+    height: 180px;
+  }
+
+  .hero-banner .profile-image {
+    left: 15px;
+    bottom: -45px;
+    width: 100px;
+    height: 100px;
+  }
+
   .bento-main {
     padding: 15px;
   }
