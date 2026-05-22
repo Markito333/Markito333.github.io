@@ -102,7 +102,7 @@
 
 .badge-d { top: 0%; left: -10%; animation-delay: 0s; background: #ffeec8; color: #8B7355; }
 .badge-s { top: 10%; right: -10%; animation-delay: 0.5s; background: #f8ffe3; color: #6B7D4E; }
-.badge-c { bottom: 10%; left: 0%; animation-delay: 1s; background: #fffdf0; color: #e4e86d; }
+.badge-c { bottom: 10%; left: 0%; animation-delay: 1s; background: #fffbe4; color: #e3c60c; }
 .badge-e { bottom: 0%; right: 0%; animation-delay: 1.5s; background: #fff8ed; color: #76391b; }
 
 @keyframes badgeFloat {
