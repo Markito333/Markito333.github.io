@@ -387,6 +387,30 @@
   }
 }
 
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px 24px;
+    text-align: center;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-line {
+    width: 40px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+  }
+
+  .footer-social {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 480px) {
   .profile-image {
     width: 100px;

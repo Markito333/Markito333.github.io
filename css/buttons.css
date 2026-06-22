@@ -91,34 +91,94 @@
 
 .footer {
   background-color: #151515;
-  color: #888;
-  padding: 30px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin-top: 100px;
+  padding: 0;
 }
 
-.footer p {
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #fff;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.footer-copy {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.45);
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.4;
+}
+
+.footer-role {
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.2);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+
+.footer-line {
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.12), transparent);
+  flex-shrink: 0;
 }
 
 .footer-social {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 12px;
+  gap: 6px;
+  margin-left: auto;
 }
 
-.footer a {
-  color: #666;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  padding: 8px;
+.footer-social a {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.3);
+  font-size: 0.9rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 
-.footer a:hover {
-  color: #aaa;
+.footer-social a:hover {
+  background: rgba(168, 198, 134, 0.1);
+  border-color: var(--primary-light);
+  color: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 198, 134, 0.15);
 }
 
 .back-to-top {
