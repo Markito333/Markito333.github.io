@@ -44,8 +44,9 @@
 }
 
 .btn-caramel {
-  background-color: rgb(24, 24, 24);
-  color: var(--white);
+  background-color: rgb(255, 220, 105);
+  color: black;
+  font-weight: bold;
 }
 
 .btn-caramel:hover {
@@ -90,9 +91,9 @@
 }
 
 .footer {
-  background-color: #151515;
-  border-top: 1px solid rgba(255,255,255,0.06);
-  margin-top: 100px;
+  background-color: #faf8f5;
+  border-top: 1px solid #f0ebe3;
+  margin-top: 80px;
   padding: 0;
 }
 
@@ -112,14 +113,14 @@
 }
 
 .footer-logo {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+  background: #4b2e1e;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   color: #fff;
@@ -130,15 +131,15 @@
 .footer-copy {
   margin: 0;
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.45);
-  font-family: 'Outfit', sans-serif;
+  color: #8a7a6a;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.4;
 }
 
 .footer-role {
   margin: 0;
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.2);
+  color: #b5a89a;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   letter-spacing: 0.3px;
@@ -148,7 +149,7 @@
 .footer-line {
   width: 1px;
   height: 36px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.12), transparent);
+  background: #e8e0d6;
   flex-shrink: 0;
 }
 
@@ -159,26 +160,26 @@
 }
 
 .footer-social a {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   border-radius: 10px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: transparent;
+  border: 1px solid #e8e0d6;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255,255,255,0.3);
+  color: #b5a89a;
   font-size: 0.9rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
 
 .footer-social a:hover {
-  background: rgba(168, 198, 134, 0.1);
-  border-color: var(--primary-light);
-  color: var(--primary-light);
+  background: #4b2e1e;
+  border-color: #4b2e1e;
+  color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(168, 198, 134, 0.15);
+  box-shadow: 0 4px 12px rgba(75, 46, 30, 0.15);
 }
 
 .back-to-top {
