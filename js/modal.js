@@ -87,7 +87,7 @@ class Modal {
 
       const img = document.createElement('img');
       img.src = imageSrc.trim();
-      img.alt = 'Preview del proyecto';
+      img.alt = 'Project preview';
       img.loading = 'lazy';
 
       galleryItem.appendChild(img);

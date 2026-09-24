@@ -44,15 +44,15 @@
 }
 
 .btn-caramel {
-  background-color: rgb(255, 220, 105);
-  color: black;
+  background-color: #fff8ed;
+  color: #76391b;
   font-weight: bold;
 }
 
 .btn-caramel:hover {
-  background-color: var(--dark-color);
+  background-color: #f1e3cf;
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(28, 18, 7, 0.35);
+  box-shadow: 0 8px 25px rgba(118, 57, 27, 0.25);
 }
 
 .btn-outline {

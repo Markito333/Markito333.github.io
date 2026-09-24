@@ -3,13 +3,13 @@
 .bento-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .bento-main {
   background-color: #ffffff;
   border-radius: var(--border-radius);
-  padding: 40px;
+  padding: 25px;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -19,6 +19,32 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.bento-stats .description-text {
+  display: inline;
+  margin: 0;
+}
+
+.hero-talk-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 12px;
+  vertical-align: middle;
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 30px;
+  border: 1px solid #d6cbb8;
+  background: transparent;
+  color: #4b2e1e;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-talk-btn:hover {
+  background: #f5ede1;
 }
 
 .bento-badge {
@@ -36,9 +62,15 @@
 
 .profile-section {
   display: flex;
-  align-items: flex-end;
-  gap: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 20px;
   width: 100%;
+  margin-top: -70px;
+  margin-left: -20px;
+  position: relative;
+  z-index: 2;
 }
 
 .profile-image {
@@ -47,7 +79,8 @@
   overflow: visible;
   flex-shrink: 0;
   border-radius: 50%;
-  border: 4px solid rgb(236, 236, 236);
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   position: relative;
 }
 
@@ -87,13 +120,19 @@
 
 
 .profile-name {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--dark-color);
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   font-weight: 800;
   line-height: 1.1;
   font-family: 'Poppins', sans-serif;
   letter-spacing: -1px;
+}
+
+.profile-email {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 10px;
 }
 
 .name-marcos {
@@ -125,6 +164,7 @@
 .profile-buttons {
   display: flex;
   gap: 15px;
+  justify-content: center;
 }
 
 .pichero-image {

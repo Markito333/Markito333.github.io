@@ -15,21 +15,20 @@
     height: 300px;
   }
 
-  .hero-banner .profile-image {
-    left: 40px;
-    bottom: -60px;
-    width: 130px;
-    height: 130px;
-  }
-
   .bento-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
   
   .bento-stats {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
+  }
+
+  .bento-stats .description-text {
+    max-width: 100%;
+    text-align: left;
   }
 
   .projects-showcase {
@@ -122,14 +121,7 @@
 
 @media (max-width: 576px) {
   .hero-banner {
-    height: 200px;
-  }
-
-  .hero-banner .profile-image {
-    left: 20px;
-    bottom: -50px;
-    width: 110px;
-    height: 110px;
+    height: 140px;
   }
 
   .bento-main {
@@ -162,9 +154,19 @@
   }
   
   .bento-stats {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
   }
+
+  .badges-container {
+    height: 150px;
+  }
+
+  .badge-d { left: 0%; }
+  .badge-s { right: 0%; }
+  .badge-c { left: 0%; }
+  .badge-e { right: 0%; }
   
   .stat-card {
     padding: 15px;
@@ -251,14 +253,7 @@
 
 @media (max-width: 480px) {
   .hero-banner {
-    height: 180px;
-  }
-
-  .hero-banner .profile-image {
-    left: 15px;
-    bottom: -45px;
-    width: 100px;
-    height: 100px;
+    height: 120px;
   }
 
   .bento-main {
@@ -285,7 +280,14 @@
   
   .profile-buttons {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 8px;
+  }
+
+  .profile-buttons .btn {
+    flex: 1 1 auto;
+    min-width: 0;
   }
   
   .btn {
@@ -295,9 +297,19 @@
   }
   
   .bento-stats {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 8px;
   }
+
+  .badges-container {
+    height: 140px;
+  }
+
+  .badge-d { left: 0%; }
+  .badge-s { right: 0%; }
+  .badge-c { left: 0%; }
+  .badge-e { right: 0%; }
   
   .stat-card {
     padding: 12px;

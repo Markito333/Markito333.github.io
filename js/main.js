@@ -3,9 +3,9 @@ import Pagination from './pagination.js';
 import Modal from './modal.js';
 
 const privateMessages = {
-  'children-management': 'Sistema de gestión desarrollado para el Jardín Infantil "José Francisco Costa Velázquez". Por políticas de seguridad y confidencialidad, este proyecto no está disponible para acceso público.',
-  'educational-site': 'Plataforma educativa desarrollada para el Centro Universitario Municipal de Guanajay. Este es un sistema interno y no está disponible para visualización pública.',
-  'remesas-system': 'Sistema de envío de remesas entre agentes de empresas privadas. Por seguridad y políticas corporativas, este proyecto es de acceso restringido.'
+  'children-management': 'Management system developed for the "José Francisco Costa Velázquez" kindergarten. Due to security and confidentiality policies, this project is not available for public access.',
+  'educational-site': 'Educational platform developed for the Municipal University Center of Guanajay. This is an internal system and is not available for public viewing.',
+  'remesas-system': 'Remittance sending system between agents of private companies. For security and corporate policies, access to this project is restricted.'
 };
 
 document.addEventListener('DOMContentLoaded', function() {
