@@ -44,20 +44,27 @@
 }
 
 .btn-caramel {
-  background-color: #fff8ed;
-  color: #76391b;
-  font-weight: bold;
+  background: #ffe177;
+  color: #3d3d3d;
+  font-weight: 600;
+  padding: 9px 18px;
+  font-size: 0.8rem;
+  border-radius: 50px;
 }
 
 .btn-caramel:hover {
-  background-color: #f1e3cf;
+  background: #ffd95c;
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(118, 57, 27, 0.25);
+  box-shadow: 0 10px 30px rgba(255, 225, 119, 0.5);
 }
 
 .btn-outline {
   background-color: rgb(239, 239, 239);
-  color:black;
+  color: #333;
+  font-weight: 600;
+  padding: 9px 18px;
+  font-size: 0.8rem;
+  border-radius: 50px;
 }
 
 .btn-outline:hover {
@@ -100,7 +107,7 @@
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 32px 40px;
+  padding: 24px 40px;
   display: flex;
   align-items: center;
   gap: 32px;
@@ -108,24 +115,8 @@
 
 .footer-brand {
   display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.footer-logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: #4b2e1e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 0.75rem;
-  color: #fff;
-  letter-spacing: 1px;
-  flex-shrink: 0;
+  align-items: baseline;
+  gap: 10px;
 }
 
 .footer-copy {
@@ -146,40 +137,28 @@
   line-height: 1.4;
 }
 
-.footer-line {
-  width: 1px;
-  height: 36px;
-  background: #e8e0d6;
-  flex-shrink: 0;
-}
-
 .footer-social {
   display: flex;
-  gap: 6px;
+  gap: 4px;
   margin-left: auto;
 }
 
 .footer-social a {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: transparent;
-  border: 1px solid #e8e0d6;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #b5a89a;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
 
 .footer-social a:hover {
-  background: #4b2e1e;
-  border-color: #4b2e1e;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(75, 46, 30, 0.15);
+  background: #f0ebe3;
+  color: #4b2e1e;
 }
 
 .back-to-top {
