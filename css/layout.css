@@ -135,9 +135,17 @@
 }
 
 .profile-email {
+  display: block;
+  width: fit-content;
   font-size: 0.85rem;
   color: #888;
   margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.profile-email:hover {
+  color: var(--primary-color);
 }
 
 .name-marcos {
