@@ -242,15 +242,16 @@
   font-size: 1rem;
   font-weight: 600;
   border-radius: 50px;
-  background: #fff8ed;
-  color: #76391b;
+  background: #ffe177;
+  color: #3d3d3d;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .showcase-btn:hover {
+  background: #ffd95c;
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 10px 30px rgba(255, 225, 119, 0.5);
 }
 
 .projects-grid {
@@ -408,9 +409,9 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 60px 40px;
-  background: linear-gradient(135deg, #faf6f0 0%, #f5ede1 100%);
+  background: transparent;
   border-radius: 24px;
-  border: 1px solid #ece3d5;
+  border: none;
 }
 
 .contact-title {
@@ -435,26 +436,40 @@
 }
 
 .contact-link {
-  width: 52px;
-  height: 52px;
+  --brand: #4b2e1e;
+  width: 50px;
+  height: 50px;
   border-radius: 14px;
-  background: #fff;
-  border: 1px solid #ece3d5;
-  color: #4b2e1e;
+  background: transparent;
+  border: none;
+  color: var(--brand);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(75, 46, 30, 0.06);
+}
+
+.contact-link--email {
+  --brand: #4b2e1e;
+}
+
+.contact-link--github {
+  --brand: #181717;
+}
+
+.contact-link--linkedin {
+  --brand: #0a66c2;
+}
+
+.contact-link--twitter {
+  --brand: #1da1f2;
 }
 
 .contact-link:hover {
-  background: #4b2e1e;
+  background: var(--brand);
   color: #fff;
-  border-color: #4b2e1e;
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(75, 46, 30, 0.15);
 }
 
 .modal {
