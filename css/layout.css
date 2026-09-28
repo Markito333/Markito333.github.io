@@ -29,22 +29,27 @@
 .hero-talk-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  margin-left: 12px;
+  gap: 5px;
+  margin-left: 10px;
   vertical-align: middle;
-  padding: 8px 18px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  border-radius: 30px;
-  border: 1px solid #d6cbb8;
-  background: transparent;
-  color: #4b2e1e;
+  padding: 4px 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: #ffe177;
+  color: #3d3d3d;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.hero-talk-btn:hover {
-  background: #f5ede1;
+.hero-talk-btn:hover,
+.hero-talk-btn:focus {
+  background: #ffd95c;
+  transform: translateY(-2px);
+  box-shadow: none;
 }
 
 .bento-badge {
@@ -164,7 +169,7 @@
 .profile-buttons {
   display: flex;
   gap: 15px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .pichero-image {
