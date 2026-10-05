@@ -61,6 +61,18 @@
   padding: 8px 16px;
 }
 
+.section-subtitle .subtitle-icon {
+  display: inline-block;
+  vertical-align: -1px;
+  margin-right: 8px;
+  color: #3d3d3d;
+  transition: var(--transition);
+}
+
+.section-subtitle:hover .subtitle-icon {
+  transform: scale(1.15) rotate(-6deg);
+}
+
 .menu-fab {
   position: fixed;
   top: 15px;
