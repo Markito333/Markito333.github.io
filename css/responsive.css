@@ -167,6 +167,7 @@
   .badge-s { right: 0%; }
   .badge-c { left: 0%; }
   .badge-e { right: 0%; }
+  .badge-l { left: 50%; }
   
   .stat-card {
     padding: 15px;
@@ -310,6 +311,7 @@
   .badge-s { right: 0%; }
   .badge-c { left: 0%; }
   .badge-e { right: 0%; }
+  .badge-l { left: 50%; }
   
   .stat-card {
     padding: 12px;

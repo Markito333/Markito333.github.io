@@ -107,10 +107,42 @@
 .badge-s { top: 10%; right: -10%; animation-delay: 0.5s; background: #f8ffe3; color: #6B7D4E; }
 .badge-c { bottom: 10%; left: 0%; animation-delay: 1s; background: #fffbe4; color: #e3c60c; }
 .badge-e { bottom: 0%; right: 0%; animation-delay: 1.5s; background: #fff8ed; color: #76391b; }
+.badge-l {
+  top: 88%;
+  left: 50%;
+  z-index: 2;
+  animation: badgeFloatCenter 3s ease-in-out infinite;
+  animation-delay: 2s;
+  background: #f1ffdf;
+  color: #54720e;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.badge-flags {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-flags .flag {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+  display: block;
+}
 
 @keyframes badgeFloat {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
+}
+
+@keyframes badgeFloatCenter {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -8px); }
 }
 
 .skills-section {
