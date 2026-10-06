@@ -1,40 +1,40 @@
 class Pagination {
   constructor(options = {}) {
     this.gridsSelector = options.gridsSelector || '.projects-grid';
-    this.buttonsSelector = options.buttonsSelector || '.pagination-btn';
     this.init();
   }
 
   init() {
     const grids = document.querySelectorAll(this.gridsSelector);
-    const buttons = document.querySelectorAll(this.buttonsSelector);
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
     
-    if (!grids.length || !buttons.length) return;
+    if (!grids.length || !prevBtn || !nextBtn) return;
 
-    grids.forEach((grid, index) => {
-      if (index === 0) {
-        grid.classList.remove('hidden');
-      } else {
-        grid.classList.add('hidden');
-      }
-    });
+    let currentPage = 0;
+    const totalPages = grids.length;
 
-    buttons.forEach(button => {
-      button.addEventListener('click', () => {
-        const pageIndex = parseInt(button.getAttribute('data-page'));
-        
-        buttons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-        
-        grids.forEach((grid, index) => {
-          if (index === pageIndex) {
-            grid.classList.remove('hidden');
-          } else {
-            grid.classList.add('hidden');
-          }
-        });
+    const showPage = (index) => {
+      if (index < 0) index = 0;
+      if (index >= totalPages) index = totalPages - 1;
+      currentPage = index;
+
+      grids.forEach((grid, i) => {
+        if (i === currentPage) {
+          grid.classList.remove('hidden');
+        } else {
+          grid.classList.add('hidden');
+        }
       });
-    });
+
+      prevBtn.disabled = currentPage === 0;
+      nextBtn.disabled = currentPage === totalPages - 1;
+    };
+
+    prevBtn.addEventListener('click', () => showPage(currentPage - 1));
+    nextBtn.addEventListener('click', () => showPage(currentPage + 1));
+
+    showPage(0);
   }
 }
 
