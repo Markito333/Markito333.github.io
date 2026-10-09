@@ -35,6 +35,11 @@ const technologies = [
     alt: 'PostgreSQL'
   },
   {
+  name: 'Redis',
+  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
+  alt: 'Redis'
+},
+  {
     name: 'Postman',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg',
     alt: 'Postman'
